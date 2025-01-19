@@ -1,0 +1,180 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #6A5ACD; /* Light Purple */
+}
+
+header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+}
+
+header nav a:hover {
+  color: #6A5ACD;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 5%;
+  background-color: #f3f3f3;
+  flex-wrap: wrap;
+}
+
+.hero .content {
+  max-width: 600px;
+  flex: 1;
+  margin-bottom: 80px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #6A5ACD;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.hero .image {
+  flex: 1;
+  max-width: 400px;
+}
+
+.hero .image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Gradient Buttons */
+.gradient-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Ensures buttons stay in line and wrap on smaller screens */
+  justify-content: flex-start; /* Align buttons to the left */
+  order: 2; /* Move buttons below the content */
+}
+
+.gradient-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gradient-button:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.premium-notes {
+  background: linear-gradient(45deg, purple, green);
+}
+
+.free-notes {
+  background: linear-gradient(45deg, black, white);
+  color: rgb(14, 14, 14);
+  border: 2px solid white;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+  color: #444;
+}
+
+footer a {
+  color: #6A5ACD;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Layout Adjustments */
+@media (max-width: 768px) {
+  .hero {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .hero .content {
+      max-width: 100%;
+      margin-bottom: 30px;
+  }
+
+  .hero .image {
+      max-width: 100%;
+      order: 1; /* Ensure image is above the buttons */
+  }
+
+  .gradient-buttons {
+      justify-content: center;
+      margin-top: 20px;
+      order: 2; /* Move buttons below the image */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+      font-size: 2rem;
+  }
+
+  .hero p {
+      font-size: 0.9rem;
+  }
+
+  /* Move the buttons below the image only */
+  .gradient-buttons {
+      order: 2; /* Moves the buttons below the image */
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+  }
+
+  /* Ensures image stays above the buttons */
+  .hero .image {
+      order: 1;
+  }
+}
