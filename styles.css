@@ -7,7 +7,12 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #fff;
+  background-color: #defdff;
+background-image: -webkit-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
+background-image: -moz-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
+background-image: -o-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
+background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
+
   color: #000;
 }
 
@@ -16,14 +21,17 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 5%;
-  background-color: #f8f8f8;
+  background: rgb(34,164,195);
+background: linear-gradient(0deg, rgba(34,164,195,1) 0%, rgba(228,45,240,1) 100%);
   border-bottom: 1px solid #ddd;
+  
 }
 
 header .logo {
+  
   font-size: 1.8rem;
   font-weight: bold;
-  color: #6A5ACD; /* Light Purple */
+  color: #2d2b2d; /* Light Purple */
 }
 
 header nav a {
@@ -43,7 +51,12 @@ header nav a:hover {
   align-items: center;
   justify-content: space-between;
   padding: 50px 5%;
-  background-color: #f3f3f3;
+  background-color: #defdff;
+background-image: -webkit-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
+background-image: -moz-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
+background-image: -o-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
+background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
+
   flex-wrap: wrap;
 }
 
@@ -176,5 +189,125 @@ footer a:hover {
   /* Ensures image stays above the buttons */
   .hero .image {
       order: 1;
+  }
+}
+
+
+
+.container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+.card {
+  width: 250px; /* Default size for desktop */
+  height: 320px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card .imgBx {
+  width: 100%;
+  height: 140px;
+  background: linear-gradient(120deg, #8e44ad, #2ecc71);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .imgBx img {
+  width: 80px;
+  height: 80px;
+}
+
+.card .contentBx {
+  padding: 15px;
+  text-align: center;
+}
+
+.card .contentBx h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card .contentBx p {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.notes-section h2 {
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  font-size: 28px; /* Adjust the font size */
+  font-weight: bold;
+  color: #4a4a4a; /* Use a neutral or themed color */
+  margin-bottom: 20px; /* Space between the heading and the cards */
+  background: linear-gradient(90deg, #b300ff, #8400ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .container {
+      gap: 20px; /* Reduce spacing between cards for tablets */
+  }
+  .card {
+      width: 220px; /* Slightly smaller cards for tablets */
+      height: 300px;
+  }
+  .card .imgBx img {
+      width: 70px; /* Slightly smaller images for tablets */
+      height: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      gap: 15px;
+  }
+  .card {
+      width: 180px; /* Smaller cards for mobile */
+      height: 260px;
+  }
+  .card .imgBx {
+      height: 120px; /* Adjust image box height */
+  }
+  .card .imgBx img {
+      width: 60px; /* Smaller images for mobile */
+      height: 60px;
+  }
+  .card .contentBx h3 {
+      font-size: 16px; /* Smaller heading text */
+  }
+  .card .contentBx p {
+      font-size: 12px; /* Smaller description text */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      flex-direction: column; /* Stack cards vertically on very small screens */
+      align-items: center;
+  }
+  .card {
+      width: 90%; /* Take up most of the screen width */
+      max-width: 300px; /* Prevent cards from being too large */
+      margin-bottom: 20px;
   }
 }
