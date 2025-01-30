@@ -16,37 +16,11 @@ background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
   color: #000;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 5%;
-  background: rgb(34,164,195);
-background: linear-gradient(0deg, rgba(34,164,195,1) 0%, rgba(228,45,240,1) 100%);
-  border-bottom: 1px solid #ddd;
-  
-}
 
-header .logo {
-  
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #2d2b2d; /* Light Purple */
-}
-
-header nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #000;
-  font-size: 1rem;
-}
-
-header nav a:hover {
-  color: #6A5ACD;
-}
 
 /* Hero Section */
 .hero {
+ 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -160,6 +134,7 @@ footer a:hover {
   .hero .image {
       max-width: 100%;
       order: 1; /* Ensure image is above the buttons */
+      /* transform: rotate(11deg); */
   }
 
   .gradient-buttons {

@@ -4,19 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notess</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <div class="logo">Notess</div>
-        <nav>
+
+    <!-- Navbar  -->
+     <header>
+    <nav class="navbar">
+        <div class="logo">
+
+          <a href="#"><img src="assets/images/notess-nav-logo.png" alt="" height="40px" style="left: -10000px;" ></a>
+        </div>
+        <div class="menu" id="menu"> <!-- Add id="menu" here -->
+          <div class="menu-links">
             <a href="#">Home</a>
             <a href="#">About</a>
-            <a href="#">Notes</a>
             <a href="#">Contact</a>
-        </nav>
+            <a href="#">Blog</a>
+          </div>
+          <button class="nav-notes">Notes</button>
+        </div>
+        <div class="menu-btn" id="menu-btn"> <!-- Add id="menu-btn" here -->
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
     </header>
+   
 
+      <!-- Hero section  -->
     <section class="hero">
         <div class="content">
             <h1>Your Ultimate Source For All <span>Educational Requirements</span> Online</h1>
@@ -27,7 +44,7 @@
             </div>
         </div>
         <div class="image">
-            <img src="notess-logo.png" alt="Hero Image">
+            <img src="assets/images/notess-logo.png" alt="Hero Image">
         </div>
     </section>
 
@@ -37,7 +54,7 @@
             <!-- Card 1 -->
             <div class="card">
                 <div class="imgBx">
-                    <img src="notess-logo.png" alt="Computer Science">
+                    <img src="assets/images/notess-logo.png" alt="Computer Science">
                 </div>
                 <div class="contentBx">
                     <h3>Computer Science</h3>
@@ -47,7 +64,7 @@
             <!-- Card 2 -->
             <div class="card">
                 <div class="imgBx">
-                    <img src="notess-logo.png" alt="Mechanical Engineering">
+                    <img src="assets/images/notess-logo.png" alt="Mechanical Engineering">
                 </div>
                 <div class="contentBx">
                     <h3>Mechanical Engineering</h3>
@@ -57,7 +74,7 @@
             <!-- Card 3 -->
             <div class="card">
                 <div class="imgBx">
-                    <img src="notess-logo.png" alt="Electronics and Communication">
+                    <img src="assets/images/notess-logo.png" alt="Electronics and Communication">
                 </div>
                 <div class="contentBx">
                     <h3>Electronics & Communication</h3>
@@ -70,5 +87,25 @@
     <footer>
         <p>&copy; 2025 Notess. All rights reserved. | <a href="#">Privacy Policy</a></p>
     </footer>
+
+    <script>
+       // Get the elements
+const menuBtn = document.getElementById('menu-btn');
+const menu = document.querySelector('.menu');
+
+// Add event listener to toggle the menu on click of the button
+menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
+
+// Close the menu when clicking outside of it
+document.addEventListener('click', (e) => {
+  if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+    menu.classList.remove('active');
+  }
+});
+
+    </script>
+
 </body>
 </html>

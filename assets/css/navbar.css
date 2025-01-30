@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #010101;
+  font-family: "Ubuntu", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.navbar {
+  height: 70px;
+  /* width: 100%; */
+  background: rgb(34,164,195);
+  background: linear-gradient(0deg, rgba(34,164,195,1) 0%, rgba(228,45,240,1) 100%);
+  border-bottom: 1px solid #ddd;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: fixed; */
+}
+
+
+  
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.menu-links {
+  display: flex;
+  gap: 24px;
+  border-right: 1px solid #000000;
+  padding-inline: 24px;
+}
+
+.menu-links a {
+  font-weight: 500;
+  color: #000000;
+  padding: 8px 16px;
+}
+
+.menu-links a:hover {
+  color: white;
+}
+
+.nav-notes {
+  font-weight: 500;
+  padding: 12px 22px;
+  background-color: transparent;
+  color: #000000;
+  border-radius: 10px;
+  border: 2px solid #0aa5ff;
+  transition: 0.2s;
+}
+
+.nav-notes:hover {
+  background-color: #0aa5ff;
+  color: white;
+}
+
+.menu-btn {
+  font-size: 32px;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+/* Media query for small screens */
+@media (max-width: 53rem) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 70px; /* Position it below the navbar */
+    right: 0; /* Align it to the right */
+    background-color: rgb(34,164,195); /* Same as navbar background */
+    width: 250px; /* You can adjust the width */
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 10px;
+    transform: translateX(100%); /* Initially hidden off-screen */
+    transition: transform 0.3s ease; /* Smooth transition for both swipe-in and swipe-out */
+  }
+
+  .menu.active {
+    display: flex; /* Show the menu when active */
+    transform: translateX(0); /* Slide in from the right */
+  }
+
+  .menu.inactive {
+    transform: translateX(100%); /* Slide out to the right */
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .menu-links {
+    flex-direction: column;
+    gap: 16px;
+    border: none;
+  }
+
+  .log-in {
+    width: 100%;
+    text-align: center;
+  }
+}
