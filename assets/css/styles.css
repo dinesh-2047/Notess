@@ -73,9 +73,9 @@ background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
   display: flex;
   gap: 10px;
   margin-top: 20px;
-  flex-wrap: wrap; /* Ensures buttons stay in line and wrap on smaller screens */
-  justify-content: flex-start; /* Align buttons to the left */
-  order: 2; /* Move buttons below the content */
+  flex-wrap: wrap; 
+  justify-content: flex-start; 
+  order: 2; 
 }
 
 .gradient-button {
@@ -91,17 +91,18 @@ background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
 .gradient-button:hover {
   transform: scale(1.1);
   opacity: 0.9;
-}
+} 
 
 .premium-notes {
   background: linear-gradient(45deg, purple, green);
 }
 
+
 .free-notes {
   background: linear-gradient(45deg, black, white);
   color: rgb(14, 14, 14);
   border: 2px solid white;
-}
+} 
 
 /* Footer */
 footer {

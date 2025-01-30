@@ -6,6 +6,7 @@
     <title>Notess</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/darkmode.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
@@ -34,15 +35,30 @@
       </nav>
     </header>
    
-   
+   <!-- Dark mode  -->
+    <div class="toggle-switch">
+        <label class="slider">
+          <input type="checkbox" class="checkbox">
+          <span class="icon"></span>
+        </label>
+      </div>
+
+
 
       <!-- Hero section  -->
     <section class="hero">
+
+       
+       
         <div class="content">
             <h1>Your Ultimate Source For All <span>Educational Requirements</span> Online</h1>
             <p>Welcome to Notess - Your hub for free study materials and premium resources. Elevate your learning journey with us.</p>
             <div class="gradient-buttons">
-                <button class="gradient-button premium-notes">Premium Notes</button>
+                <button class="gradient-button premium-notes">
+                    <div class="inner"></div>
+                    <span>Premium Notes</span>
+                  </button>
+                  
                 <button class="gradient-button free-notes">Free Notes</button>
             </div>
         </div>
@@ -87,7 +103,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2025 Notess. All rights reserved. | <a href="#">Privacy Policy</a></p>
     </footer>
    

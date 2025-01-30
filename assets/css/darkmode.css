@@ -1,0 +1,104 @@
+button {
+    all: unset;
+  }
+  
+  /* Toggle Switch */
+  .toggle-switch {
+    position: absolute;
+    top: 80px; /* Moved downward by double its height (35px * 2 = 70px) */
+    right: 10px; /* Shifted slightly to the left */
+    width: 70px; /* 70% of original width */
+    height: 35px; /* 70% of original height */
+    z-index: 1000; /* Ensures it stays on top */
+  }
+  
+  /* Toggle Background */
+  .slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #183153;
+    border-radius: 18px; /* Adjusted for smaller size */
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .checkbox {
+    position: absolute;
+    display: none;
+  }
+  
+  /* Active State */
+  .slider:has(.checkbox:checked) {
+    background-color: #69b0e7;
+  }
+  
+  /* Toggle Button (Circular) */
+  .icon {
+    position: absolute;
+    top: 5px; /* Adjusted position */
+    left: 5px;
+    width: 25px; /* Reduced size */
+    height: 25px;
+    border-radius: 50%;
+    background-color: #183153;
+    box-shadow: inset 10px -3px 0px 0px #d8dbe0;
+    transition: 0.4s ease;
+  }
+  
+  /* When Checkbox is Checked */
+  .checkbox:checked + .icon {
+    transform: translateX(35px); /* Adjusted for new size */
+    background-color: #ffd43b;
+    box-shadow: none;
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background-color: #0a1f44 !important;
+    background-image: radial-gradient(circle at center, #0a1f44 0%, #030b1a 100%) !important;
+    color: white !important;
+    box-shadow: 0 0 20px rgba(100, 149, 237, 0.6); /* Blue glowing effect */
+  }
+  
+  /* Dark Mode for Hero Section with Blue Glow */
+  .dark-hero {
+    background-color: #0a1f44 !important;
+    background-image: radial-gradient(circle at center, #0a1f44 0%, #030b1a 100%) !important;
+    color: white !important;
+    box-shadow: 0 0 20px rgba(100, 149, 237, 0.6); /* Blue glowing effect */
+  }
+  
+  /* Buttons in Dark Mode */
+  .dark-mode .free-notes {
+    background: linear-gradient(45deg, #1a1a1a, #2e2e2e);
+    color: white;
+    border: 2px solid gray;
+  }
+  
+  .dark-mode .premium-notes {
+    background: linear-gradient(45deg, purple, blue);
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.6); /* Purple glow */
+  }
+  
+  /* Toggle Button in Dark Mode */
+  .dark-mode .slider {
+    background-color: #1c2a4d;
+    box-shadow: 0 0 12px rgba(0, 140, 255, 0.8); /* Neon Blue Glow */
+  }
+  
+  /* Toggle Button Switch in Dark Mode */
+  .dark-mode .icon {
+    background-color: #69b0e7;
+    box-shadow: 0 0 8px rgba(0, 140, 255, 0.9); /* Blue glow on the switch */
+  }
+  
+  .dark-mode .footer{
+      background-color: #0a1f44 !important;
+    background-image: radial-gradient(circle at center, #0a1f44 0%, #030b1a 100%) !important;
+    color: white !important;
+    box-shadow: 0 0 20px rgba(100, 149, 237, 0.6); /* Blue glowing effect */
+  }
+  
+  
+ 
