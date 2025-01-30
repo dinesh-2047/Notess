@@ -71,9 +71,9 @@ button {
   
   /* Buttons in Dark Mode */
   .dark-mode .free-notes {
-    background: linear-gradient(45deg, #1a1a1a, #2e2e2e);
+    background: linear-gradient(45deg, #5ac040, #6abe40);
     color: white;
-    border: 2px solid gray;
+    border: 2px solid rgb(100, 185, 61);
   }
   
   .dark-mode .premium-notes {
