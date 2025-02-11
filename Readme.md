@@ -43,9 +43,9 @@
       <th>Event Description</th>
    </tr>
    <tr>
-        <td><img src="/assets/images/swoc.png" width="200" height="auto" loading="lazy" alt="SWOC"/></td>
-        <td><a href="https://swoc.devfolio.co/">SWOC 2025</a></td>
-       <td><p>SWOC is an open-source program that encourages developers to contribute to open-source projects under expert mentorship.</p></td>
+        <td><img src="/assets/images/jwoc.png" width="200" height="auto" loading="lazy" alt="SWOC"/></td>
+        <td><a href="https://www.jwoc.in">JWOC Season 6 2025</a></td>
+       <td><p>WoC introduces students to open-source through mentorship and hands-on coding. The best projects are selected, and winners are chosen based on their contributions.</p></td>
     </tr>
    
 </table>
