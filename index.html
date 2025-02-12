@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,67 +8,76 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/darkmode.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
+
 <body>
 
-  
-
     <!-- Navbar  -->
-     <header>
-    <nav class="navbar">
-        <div class="logo">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
 
-          <a href="#"><img src="assets/images/notess-nav-logo.png" alt="" height="40px" style="left: -10000px;" ></a>
-        </div>
-        <div class="menu" id="menu"> <!-- Add id="menu" here -->
-          <div class="menu-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#">Blog</a>
-          </div>
-          <button class="nav-notes">Notes</button>
-        </div>
-        <div class="menu-btn" id="menu-btn"> <!-- Add id="menu-btn" here -->
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </nav>
+                <a href="#"><img src="assets/images/notess-nav-logo.png" alt="" height="40px"
+                        style="left: -10000px;"></a>
+            </div>
+            <div class="menu" id="menu"> <!-- Add id="menu" here -->
+                <div class="menu-links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Blog</a>
+                </div>
+                <button class="nav-notes">Notes</button>
+            </div>
+            <div class="menu-btn" id="menu-btn"> <!-- Add id="menu-btn" here -->
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
     </header>
-   
-   <!-- Dark mode  -->
+
+    <!-- Dark mode  -->
     <div class="toggle-switch">
         <label class="slider">
-          <input type="checkbox" class="checkbox">
-          <span class="icon"></span>
+            <input type="checkbox" class="checkbox">
+            <span class="icon"></span>
         </label>
-      </div>
+    </div>
 
 
 
-      <!-- Hero section  -->
+    <!-- Hero section  -->
     <section class="hero">
 
-        <div class="content">
-            <h1>Your Ultimate Source For All <span>Educational Requirements</span> Online</h1>
-            <p>Welcome to Notess - Your hub for free study materials and premium resources. Elevate your learning journey with us.</p>
-            <div class="gradient-buttons">
+        <div data-aos="fade-up" class="content">
+            <div class="text-animate">
+                <h1 data-aos="fade-right">Your Ultimate Source For All <span>Educational Requirements</span>
+                    Online</h1>
+            </div>
+            <p data-aos="fade-left">Welcome to Notess - Your hub for free study materials and premium resources. Elevate
+                your learning journey with us.</p>
+            <div data-aos="fade-left" class="gradient-buttons">
                 <button class="gradient-button premium-notes">
                     <div class="inner"></div>
                     <span>Premium Notes</span>
-                  </button>
-                  
+                </button>
+
                 <button class="gradient-button free-notes">Free Notes</button>
             </div>
         </div>
         <div class="image">
             <img src="assets/images/notess-logo.png" alt="Hero Image">
+            <span class="circle-spin"></span>
+            <span class="circle-spin-2"></span>
+            <span class="circle-spin-3"></span>
         </div>
     </section>
 
     <section class="notes-section">
-        <h2>Explore Notes </h2>
-        <div class="container">
+        <h2 data-aos="fade-up">Explore Notes </h2>
+        <div data-aos="fade-left" class="container">
             <!-- Card 1 -->
             <div class="card">
                 <div class="imgBx">
@@ -104,9 +114,14 @@
     <footer class="footer">
         <p>&copy; 2025 Notess. All rights reserved. | <a href="#">Privacy Policy</a></p>
     </footer>
-   
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000 });
+    </script>
     <script src="./assets/JavaScript/script.js"></script>
 
 </body>
+
 </html>
