@@ -8,10 +8,14 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
-.hero .content{
-    margin: 2.5rem !important;  
+.hero .hero-container .content{
+    margin-left: 2rem;
+}
+.hero .hero-container .img-btn{
+    display: flex;
+    flex-direction: column;
 }
 .hero .image{
     width: 50%;
@@ -85,8 +89,8 @@ button:hover {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0);
-    width: 23.5rem;
-    height: 23.5rem;
+    width: 25rem;
+    height: 25rem;
     border-radius: 50%;
     border-top: .2rem solid #D338EC;
     border-bottom: .2rem solid #D338EC;
@@ -100,8 +104,8 @@ button:hover {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0);
-    width: 27rem;
-    height: 27rem;
+    width: 29.5rem;
+    height: 29.5rem;
     border-radius: 40%;
     border-top: .2rem solid #D338EC;
     border-bottom: .2rem solid #D338EC;
@@ -115,8 +119,8 @@ button:hover {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0);
-    width: 25rem;
-    height: 25rem;
+    width: 27rem;
+    height: 27rem;
     border-radius: 50%;
     border-top: .2rem solid transparent;
     border-bottom: .2rem solid transparent;
@@ -219,6 +223,7 @@ button:hover {
 @media(min-width:768px){
     .hero .hero-container{
         flex-direction: row;
+        position: relative;
     }
     .hero .hero-container .content{
         width: 50%;
@@ -230,8 +235,30 @@ button:hover {
         margin: 0;
         margin-left: 8rem;
     }
+    .hero .hero-container .image img{
+        width: 550px;
+    }
     .hero .hero-container .content .text-animate h1 span::before {
         left: 0;
+    }
+    .hero .image .circle-spin {
+        width: 32rem;
+        height: 32rem;
+    }
+    .hero .image .circle-spin-2 {
+        width: 33rem;
+        height: 33rem;
+    }
+    .hero .image .circle-spin-3 {
+        width: 34.2rem;
+        height: 34.2rem;
+    }
+    .gradient-buttons{
+        position: absolute;
+        align-items: flex-start;
+        justify-content: left;
+        left: 0;
+        top: 65%;
     }
     
 }
