@@ -1,7 +1,23 @@
 body {
     overflow-x: hidden;
 }
-
+.hero{
+    width: 100%;
+}
+.hero .hero-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.hero .content{
+    margin: 2.5rem !important;  
+}
+.hero .image{
+    width: 50%;
+    margin-bottom: 5rem !important;
+    margin-top: 5rem !important;
+}
 h1 span {
     animation: heroBgText 6s linear infinite;
     animation-delay: 2s;
@@ -30,7 +46,7 @@ button:hover {
     content: '';
     position: absolute;
     top: 40%;
-    left: 0;
+    left: 5%;
     width: 0;
     height: 22%;
     border-right: 2px solid #3F92CA;
@@ -199,4 +215,23 @@ button:hover {
     100% {
         transform: rotate(360deg) translate(20px) rotate(-360deg);
     }
+}
+@media(min-width:768px){
+    .hero .hero-container{
+        flex-direction: row;
+    }
+    .hero .hero-container .content{
+        width: 50%;
+        margin: 0;
+        margin-right: 5rem;
+    }
+    .hero .hero-container .image{
+        width: 50%;
+        margin: 0;
+        margin-left: 8rem;
+    }
+    .hero .hero-container .content .text-animate h1 span::before {
+        left: 0;
+    }
+    
 }
