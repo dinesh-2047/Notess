@@ -58,7 +58,7 @@ h1 span {
 
 .text-animate {
     position: relative;
-    width: 34.8rem;
+    width: 20.5rem;
 }
 
 button:hover {
@@ -287,6 +287,9 @@ button:hover {
         width: 50%;
         margin: 2rem;
         margin-left: 8rem;
+    }
+    .text-animate {
+        width: 34.8rem;
     }
 
     .text-animate h1 {
