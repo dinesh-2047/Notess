@@ -3,6 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+html{
+  scrollbar-color: #CA3DEA #488CCB;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -12,8 +18,9 @@ background-image: -webkit-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7
 background-image: -moz-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
 background-image: -o-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
 background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
-
   color: #000;
+  /* overflow-x: hidden; */
+  
   
  
 }
@@ -22,24 +29,24 @@ background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
 
 /* Hero Section */
 .hero {
- 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 50px 5%;
   background-color: #defdff;
 background-image: -webkit-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
 background-image: -moz-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
 background-image: -o-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
 background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
-
   flex-wrap: wrap;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .hero .content {
-  max-width: 600px;
+  width: 100%;;
   flex: 1;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 }
 
 .hero h1 {
@@ -106,6 +113,7 @@ background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
 
 /* Footer */
 footer {
+  width: 100%;
   text-align: center;
   padding: 20px;
   background-color: #f8f8f8;
@@ -172,10 +180,11 @@ footer a:hover {
 
 
 
-.container {
+.notes-section .container {
   display: flex;
   gap: 40px;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
 }
 
@@ -243,6 +252,7 @@ footer a:hover {
 /* Responsive Design */
 @media (max-width: 1200px) {
   .container {
+    flex-direction: column;
       gap: 20px; /* Reduce spacing between cards for tablets */
   }
   .card {

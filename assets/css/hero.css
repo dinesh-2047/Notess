@@ -1,27 +1,56 @@
 body {
     overflow-x: hidden;
 }
-.hero{
-    width: 100%;
-}
-.hero .hero-container{
+
+.screen {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+}
+
+.hero .hero-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.hero .hero-container .content{
-    margin-left: 2rem;
+
+.text-animate {
+    width: 100%;
 }
-.hero .hero-container .img-btn{
+
+.text-animate h1 {
+    font-size: 1.5rem !important;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.hero .hero-container .img-btn {
     display: flex;
     flex-direction: column;
 }
-.hero .image{
+
+.hero .image {
     width: 50%;
     margin-bottom: 5rem !important;
     margin-top: 5rem !important;
 }
+
 h1 span {
     animation: heroBgText 6s linear infinite;
     animation-delay: 2s;
@@ -64,12 +93,15 @@ button:hover {
 
 .hero .image {
     position: relative;
-    width: 25rem;
-    height: 25rem;
+    width: 80%;
+    height: 80%;
+    margin: 1rem auto;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: visible;
+    scrollbar-color: transparent transparent;
 }
 
 .hero .image img {
@@ -84,13 +116,17 @@ button:hover {
     overflow: hidden;
 }
 
+.container {
+    overflow: visible;
+}
+
 .hero .image .circle-spin {
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0);
-    width: 25rem;
-    height: 25rem;
+    width: 80%;
+    height: 80%;
     border-radius: 50%;
     border-top: .2rem solid #D338EC;
     border-bottom: .2rem solid #D338EC;
@@ -104,8 +140,8 @@ button:hover {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0);
-    width: 29.5rem;
-    height: 29.5rem;
+    width: 100%;
+    height: 100%;
     border-radius: 40%;
     border-top: .2rem solid #D338EC;
     border-bottom: .2rem solid #D338EC;
@@ -119,8 +155,8 @@ button:hover {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0);
-    width: 27rem;
-    height: 27rem;
+    width: 90%;
+    height: 90%;
     border-radius: 50%;
     border-top: .2rem solid transparent;
     border-bottom: .2rem solid transparent;
@@ -220,45 +256,72 @@ button:hover {
         transform: rotate(360deg) translate(20px) rotate(-360deg);
     }
 }
-@media(min-width:768px){
-    .hero .hero-container{
+
+@media(min-width:990px) {
+    .text {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .hero .hero-container {
         flex-direction: row;
         position: relative;
+        margin: 0 auto;
+        overflow: visible;
     }
-    .hero .hero-container .content{
-        width: 50%;
-        margin: 0;
-        margin-right: 5rem;
+
+    h1 {
+        font-size: 5rem !important;
     }
-    .hero .hero-container .image{
-        width: 50%;
+
+    .hero .hero-container .content {
+        width: 100% !important;
         margin: 0;
+    }
+
+    .img-btn {
+        overflow: visible;
+    }
+
+    .hero .hero-container .image {
+        width: 50%;
+        margin: 2rem;
         margin-left: 8rem;
     }
-    .hero .hero-container .image img{
-        width: 550px;
+
+    .text-animate h1 {
+        font-size: 2.5rem !important;
     }
+
+    p {
+        font-size: 1.5rem !important;
+    }
+
     .hero .hero-container .content .text-animate h1 span::before {
         left: 0;
     }
+
     .hero .image .circle-spin {
-        width: 32rem;
-        height: 32rem;
+        width: 100%;
+        height: 100%;
     }
+
     .hero .image .circle-spin-2 {
-        width: 33rem;
-        height: 33rem;
+        width: 110%;
+        height: 110%;
     }
+
     .hero .image .circle-spin-3 {
-        width: 34.2rem;
-        height: 34.2rem;
+        width: 120%;
+        height: 120%;
     }
-    .gradient-buttons{
+
+    .gradient-buttons {
         position: absolute;
         align-items: flex-start;
         justify-content: left;
         left: 0;
-        top: 65%;
+        top: 75%;
     }
-    
+
 }
