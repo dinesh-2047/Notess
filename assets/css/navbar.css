@@ -45,6 +45,7 @@ button {
   display: flex;
   align-items: center;
   gap: 32px;
+  z-index: 1;
 }
 
 .menu-links {
