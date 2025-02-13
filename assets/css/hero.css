@@ -1,20 +1,15 @@
-body {
-    overflow-x: hidden;
-}
-
 .screen {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1500px;
+    max-width: 1200px;
 }
 
 .hero .hero-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
@@ -59,6 +54,8 @@ h1 span {
 .text-animate {
     position: relative;
     width: 20.5rem;
+    overflow-x: visible;
+    margin-top: 2rem;
 }
 
 button:hover {
@@ -106,6 +103,9 @@ button:hover {
 
 .hero .image img {
     border-radius: 50%;
+}
+.gradient-buttons{
+    overflow-x: visible;
 }
 
 .hero h1 {
@@ -257,21 +257,10 @@ button:hover {
     }
 }
 
-@media(min-width:990px) {
-    .text {
-        text-align: left;
-        align-items: flex-start;
-    }
-
-    .hero .hero-container {
-        flex-direction: row;
-        position: relative;
-        margin: 0 auto;
-        overflow: visible;
-    }
-
+@media (min-width:768px) {
+    
     h1 {
-        font-size: 5rem !important;
+        font-size: 3rem !important;
     }
 
     .hero .hero-container .content {
@@ -289,16 +278,16 @@ button:hover {
         margin-left: 8rem;
     }
     .text-animate {
-        width: 34.8rem;
-    }
-
-    .text-animate h1 {
-        font-size: 2.5rem !important;
+        width: 21rem;
     }
 
     p {
         font-size: 1.5rem !important;
     }
+    .hero .hero-container .img-btn{
+        margin: 0 auto;
+    }
+
 
     .hero .hero-container .content .text-animate h1 span::before {
         left: 0;
@@ -318,13 +307,42 @@ button:hover {
         width: 120%;
         height: 120%;
     }
+    .gradient-buttons {
+       margin: 0 auto;
+    }
+    
 
+}
+@media (min-width:920px){
+    .text {
+        text-align: left;
+        align-items: flex-start;
+        overflow: hidden;
+        margin-top: 4rem;
+    }
+
+    .hero .hero-container {
+        flex-direction: row;
+        position: relative;
+        margin: 0 auto;
+        overflow: visible;
+    }
+
+    h1{
+        width: 70%;
+    }
     .gradient-buttons {
         position: absolute;
+        top: 71%;
         align-items: flex-start;
         justify-content: left;
         left: 0;
-        top: 75%;
+    }
+   
+}
+@media (min-width:940px){
+    h1{
+        width: 100%;
     }
 
 }

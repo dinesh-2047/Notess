@@ -9,6 +9,7 @@ html{
   scrollbar-color: #CA3DEA #488CCB;
   scrollbar-width: thin;
   scroll-behavior: smooth;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -39,7 +40,7 @@ background-image: -moz-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 10
 background-image: -o-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
 background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
   flex-wrap: wrap;
-  min-height: 100vh;
+  min-height: 70vh;
   width: 100%;
 }
 
@@ -81,7 +82,7 @@ background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
   gap: 10px;
   margin-top: 20px;
   flex-wrap: wrap; 
-  justify-content: flex-start; 
+  /* justify-content: flex-start;  */
   order: 2; 
 }
 
