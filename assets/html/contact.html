@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/contact-us.css" />
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/darkmode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#"
+            ><img
+              src="../images/notess-nav-logo.png"
+              alt=""
+              height="40px"
+              style="left: -10000px;"
+          /></a>
+        </div>
+        <div class="menu" id="menu">
+          <!-- Add id="menu" here -->
+          <div class="menu-links">
+            <a href="/">Home</a>
+            <a href="#">About</a>
+            <a href="">Contact</a>
+            <a href="">Blog</a>
+          </div>
+          <button class="nav-notes">Notes</button>
+        </div>
+        <div class="menu-btn" id="menu-btn">
+          <!-- Add id="menu-btn" here -->
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <div class="toggle-switch">
+        <label class="slider">
+          <input type="checkbox" class="checkbox">
+          <span class="icon"></span>
+        </label>
+      </div>
+
+
+
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you! Fill out the form below.</p>
+      <form id="contact-form">
+        <div class="input-box">
+          <input type="text" required />
+          <label>Name</label>
+        </div>
+        <div class="input-box">
+          <input type="email" required />
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <textarea required placeholder="Write your words..."></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Notess. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+    <script src="../JavaScript/script.js"></script>
+  </body>
+</html>
