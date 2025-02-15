@@ -99,6 +99,12 @@ button {
     color: white !important;
     box-shadow: 0 0 20px rgba(100, 149, 237, 0.6); /* Blue glowing effect */
   }
-  
+
+  .dark-mode .container{
+    background-color: #0a1f44 !important;
+    background-image: radial-gradient(circle at center, #0a1f44 0%, #030b1a 100%) !important;
+    color: white !important;
+    box-shadow: 0 0 20px rgba(100, 149, 237, 0.6);
+  }
   
  
