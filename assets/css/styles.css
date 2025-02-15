@@ -300,3 +300,43 @@ footer a:hover {
       margin-bottom: 20px;
   }
 }
+
+/* Scroll-to-Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #6A5ACD, #32CD32);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  display: none; /* Initially hidden */
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.scroll-to-top:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* Show button when scrolling */
+.scroll-to-top.active {
+  display: flex;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .scroll-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}

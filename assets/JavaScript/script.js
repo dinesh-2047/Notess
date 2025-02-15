@@ -46,3 +46,23 @@
         });
       });
       
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      
+        // Show button after scrolling down 300px
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add("active");
+          } else {
+            scrollToTopBtn.classList.remove("active");
+          }
+        });
+      
+        // Scroll smoothly to the top when clicked
+        scrollToTopBtn.addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        });
+      });      
