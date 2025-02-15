@@ -75,4 +75,45 @@
           }
         });
       });
+
+      // Scroll to Top Button
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        const scrollToTopBtn = document.getElementById("scrollToTop");
+        const toggleSwitch = document.querySelector(".checkbox"); // Dark mode toggle
+      
+        // Function to toggle button visibility on scroll
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add("visible");
+          } else {
+            scrollToTopBtn.classList.remove("visible");
+          }
+        });
+      
+        // Smooth Scroll to Top
+        scrollToTopBtn.addEventListener("click", () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      
+        // Function to apply correct theme class
+        function applyTheme() {
+          if (localStorage.getItem("darkMode") === "enabled") {
+            scrollToTopBtn.classList.remove("light");
+            scrollToTopBtn.classList.add("dark");
+          } else {
+            scrollToTopBtn.classList.remove("dark");
+            scrollToTopBtn.classList.add("light");
+          }
+        }
+      
+        // Apply the theme on page load
+        applyTheme();
+      
+        // Toggle Dark Mode for Button When Switching Themes
+        toggleSwitch.addEventListener("change", () => {
+          localStorage.setItem("darkMode", toggleSwitch.checked ? "enabled" : "disabled");
+          applyTheme();
+        });
+      });
       

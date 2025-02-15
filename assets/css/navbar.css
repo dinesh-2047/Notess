@@ -26,12 +26,12 @@ button {
 }
 
 .navbar {
-  height: 70px;
-  /* width: 100%; */
+  height: auto;
+  width: 100%;
   background: rgb(34,164,195);
   background: linear-gradient(0deg, rgba(34,164,195,1) 0%, rgba(228,45,240,1) 100%);
   border-bottom: 1px solid #ddd;
-  padding: 20px 20px;
+  padding: 15px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,6 +46,7 @@ button {
   display: flex;
   align-items: center;
   gap: 32px;
+  z-index: 1;
 }
 
 .menu-links {
@@ -88,7 +89,7 @@ button {
 }
 
 /* Media query for small screens */
-@media (max-width: 53rem) {
+@media (max-width: 768px) {
   .menu {
     display: none;
     position: absolute;

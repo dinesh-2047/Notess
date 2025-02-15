@@ -1,6 +1,7 @@
 # <p align="center">📚 Notess - Your Go-To Notes Hub</p>
 
 <i><p align="center">Welcome to **Notess**! </p></i>
+<i><p align="center">**Notess** - A platform where users can buy, sell, store,  view and download notes (pdfs).! </p></i>
 
 ---
 

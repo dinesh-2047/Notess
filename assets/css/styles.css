@@ -3,6 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+html{
+  scrollbar-color: #CA3DEA #488CCB;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -12,8 +19,9 @@ background-image: -webkit-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7
 background-image: -moz-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
 background-image: -o-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
 background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
-
   color: #000;
+  /* overflow-x: hidden; */
+  
   
  
 }
@@ -22,24 +30,24 @@ background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
 
 /* Hero Section */
 .hero {
- 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 50px 5%;
   background-color: #defdff;
 background-image: -webkit-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
 background-image: -moz-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
 background-image: -o-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
 background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
-
   flex-wrap: wrap;
+  min-height: 75vh;
+  width: 100%;
 }
 
 .hero .content {
-  max-width: 600px;
+  width: 100%;;
   flex: 1;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 }
 
 .hero h1 {
@@ -74,7 +82,7 @@ background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
   gap: 10px;
   margin-top: 20px;
   flex-wrap: wrap; 
-  justify-content: flex-start; 
+  /* justify-content: flex-start;  */
   order: 2; 
 }
 
@@ -106,6 +114,7 @@ background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
 
 /* Footer */
 footer {
+  width: 100%;
   text-align: center;
   padding: 20px;
   background-color: #f8f8f8;
@@ -172,10 +181,11 @@ footer a:hover {
 
 
 
-.container {
+.notes-section .container {
   display: flex;
   gap: 40px;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
 }
 
@@ -243,6 +253,7 @@ footer a:hover {
 /* Responsive Design */
 @media (max-width: 1200px) {
   .container {
+    flex-direction: column;
       gap: 20px; /* Reduce spacing between cards for tablets */
   }
   .card {
@@ -288,4 +299,51 @@ footer a:hover {
       max-width: 300px; /* Prevent cards from being too large */
       margin-bottom: 20px;
   }
+}
+
+/* Scroll to Top Button */
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  border: none;
+}
+
+/* Light Mode -  */
+#scrollToTop.light {
+  background: linear-gradient(0deg, rgba(34,164,195,1) 0%, rgba(228,45,240,1) 100%); 
+  color: whitesmoke; /* Dark gray for contrast */
+}
+
+/* Dark Mode - Vibrant Shade (No Changes) */
+#scrollToTop.dark {
+  background: linear-gradient(135deg, #73FBD3, #5A3FC0);
+  color: #FFEA20;
+}
+
+/* Make Button Visible */
+#scrollToTop.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Hover Effect */
+#scrollToTop:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
 }
