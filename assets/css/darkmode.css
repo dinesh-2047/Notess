@@ -10,6 +10,7 @@ button {
     width: 70px; /* 70% of original width */
     height: 35px; /* 70% of original height */
     z-index: 1000; /* Ensures it stays on top */
+    overflow-x: visible;
   }
   
   /* Toggle Background */
