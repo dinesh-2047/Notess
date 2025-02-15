@@ -300,3 +300,50 @@ footer a:hover {
       margin-bottom: 20px;
   }
 }
+
+/* Scroll to Top Button */
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  border: none;
+}
+
+/* Light Mode -  */
+#scrollToTop.light {
+  background: linear-gradient(0deg, rgba(34,164,195,1) 0%, rgba(228,45,240,1) 100%); 
+  color: whitesmoke; /* Dark gray for contrast */
+}
+
+/* Dark Mode - Vibrant Shade (No Changes) */
+#scrollToTop.dark {
+  background: linear-gradient(135deg, #73FBD3, #5A3FC0);
+  color: #FFEA20;
+}
+
+/* Make Button Visible */
+#scrollToTop.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Hover Effect */
+#scrollToTop:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
