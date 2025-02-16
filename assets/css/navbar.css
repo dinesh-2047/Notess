@@ -61,6 +61,15 @@ button {
   padding: 8px 16px;
 }
 
+
+.visible{
+  display: inline-block;
+}
+
+.hidden{
+  display: none;
+}
+
 .menu-links a:hover {
   color: white;
 }

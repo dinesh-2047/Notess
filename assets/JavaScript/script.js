@@ -4,12 +4,24 @@
       // Get the elements
       const menuBtn = document.getElementById('menu-btn');
       const menu = document.querySelector('.menu');
+      const menuOpen = document.querySelector('.menu-open');
+      const menuClose = document.querySelector('.menu-close');
       
       // Add event listener to toggle the menu on click of the button
       menuBtn.addEventListener('click', () => {
         menu.classList.toggle('active');
       });
-      
+
+      menuClose.style.display = 'none';
+      menuClose.addEventListener("click",()=>{
+        menuClose.style.display="none"
+        menuOpen.style.display = "inline-block"
+      })
+
+      menuOpen.addEventListener("click",()=>{
+        menuOpen.style.display = "none"
+        menuClose.style.display = "inline-block"
+      })
       // Close the menu when clicking outside of it
       document.addEventListener('click', (e) => {
         if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
