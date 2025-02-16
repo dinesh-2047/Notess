@@ -1,0 +1,339 @@
+.hero .hero-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-animate {
+    width: 100%;
+}
+
+.text-animate h1 {
+    font-size: 1.5rem !important;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.hero .hero-container .img-btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .image {
+    width: 50%;
+    margin-bottom: 5rem !important;
+    margin-top: 5rem !important;
+}
+
+h1 span {
+    animation: heroBgText 6s linear infinite;
+    animation-delay: 2s;
+}
+
+.text-animate {
+    position: relative;
+    width: 20.5rem;
+    overflow-x: visible;
+    margin-top: 2rem;
+}
+
+button:hover {
+    cursor: pointer !important;
+}
+
+.text-animate h1 span {
+    color: transparent;
+    -webkit-text-stroke: 0.9px #C73FE9;
+    background-image: linear-gradient(#C73FE9, #3F92CA);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -33rem 0;
+
+}
+
+.hero .content .text-animate h1 span::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 0;
+    height: 22%;
+    border-right: 2px solid #3F92CA;
+    z-index: -1;
+}
+
+.hero .content .text-animate h1 span::before {
+    animation: heroCursorText 6s linear infinite;
+    animation-delay: 2s;
+}
+
+.hero .image {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: 1rem auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    scrollbar-color: transparent transparent;
+}
+
+.hero .image img {
+    border-radius: 50%;
+}
+.gradient-buttons{
+    overflow-x: visible;
+}
+
+.hero h1 {
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+.hero {
+    overflow: hidden;
+}
+
+.container {
+    overflow: visible;
+}
+
+.hero .image .circle-spin {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    border-top: .2rem solid #D338EC;
+    border-bottom: .2rem solid #D338EC;
+    border-left: .2rem solid transparent;
+    border-right: .2rem solid transparent;
+    animation: Spinner 8s linear infinite;
+}
+
+.hero .image .circle-spin-3 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 110%;
+    height: 110%;
+    border-radius: 40%;
+    border-top: .2rem solid #D338EC;
+    border-bottom: .2rem solid #D338EC;
+    border-left: .2rem solid #4B8BCC;
+    border-right: .2rem solid #4B8BCC;
+    animation: Spinner 5s linear infinite;
+}
+
+.hero .image .circle-spin-2 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 105%;
+    height: 105%;
+    border-radius: 50%;
+    border-top: .2rem solid transparent;
+    border-bottom: .2rem solid transparent;
+    border-left: .2rem solid #4B8BCC;
+    border-right: .2rem solid #4B8BCC;
+    animation: Spinner 5s linear infinite;
+}
+
+.circle-spin,
+.circle-spin-2,
+.circle-spin-3 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(244, 152, 243, 0.113);
+    animation: rotateCircle 6s linear infinite;
+}
+
+.circle-spin {
+    top: -30px;
+    left: -30px;
+}
+
+.circle-spin-2 {
+    bottom: -30px;
+    right: -30px;
+    animation-delay: 2s;
+}
+
+.circle-spin-3 {
+    bottom: 50px;
+    left: 50px;
+    animation-delay: 4s;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroBgText {
+
+    0%,
+    10%,
+    100% {
+        background-position: -33rem 0;
+    }
+
+    65%,
+    85% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes heroCursorText {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    65%,
+    78%,
+    85% {
+        width: 90%;
+        opacity: 1;
+    }
+
+    75%,
+    81% {
+        opacity: 0;
+    }
+}
+
+@keyframes Spinner {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes rotateCircle {
+    0% {
+        transform: rotate(0deg) translate(20px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translate(20px) rotate(-360deg);
+    }
+}
+
+@media (min-width:768px) {
+    
+    .text-animate h1 {
+        font-size: 2rem !important;
+    }
+
+    .hero .hero-container .content {
+        width: 100% !important;
+        margin: 0;
+    }
+
+    .img-btn {
+        overflow: visible;
+    }
+
+    .hero .hero-container .image {
+        width: 50%;
+        margin: 2rem;
+        margin-left: 8rem;
+    }
+    .text-animate {
+        width: 28rem;
+    }
+
+    p {
+        font-size: 1rem !important;
+    }
+    .hero .hero-container .img-btn{
+        margin: 0 auto;
+    }
+
+
+    .hero .hero-container .content .text-animate h1 span::before {
+        left: 0;
+    }
+
+    .hero .image .circle-spin {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero .image .circle-spin-2 {
+        width: 110%;
+        height: 110%;
+    }
+
+    .hero .image .circle-spin-3 {
+        width: 120%;
+        height: 120%;
+    }
+    .gradient-buttons {
+       margin: 0 auto;
+    }
+    
+
+}
+@media (min-width:920px){
+    .text {
+        text-align: left;
+        align-items: flex-start;
+        overflow: hidden;
+        margin-top: 4rem;
+    }
+
+    .hero .hero-container {
+        flex-direction: row;
+        position: relative;
+        margin: 0 auto;
+        overflow: visible;
+    }
+
+    h1{
+        width: 100%;
+    }
+    .gradient-buttons {
+        position: absolute;
+        top: 71%;
+        align-items: flex-start;
+        justify-content: left;
+        left: 0;
+    }
+   
+}
+@media (min-width:940px){
+    h1{
+        width: 100%;
+    }
+
+}
