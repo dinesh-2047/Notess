@@ -347,3 +347,55 @@ footer a:hover {
   transform: scale(1.1);
   filter: brightness(1.1);
 }
+
+/* searchbar design */
+.search-container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 50%;
+  padding: 12px;
+  margin: 20px 0;
+  font-size: 18px;
+  border: 2px solid #3498db;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  padding-right: 40px; /* Space for clear button */
+}
+
+.search-bar:focus {
+  border-color: #2ecc71;
+  box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
+}
+
+.clear-btn {
+  position: absolute;
+  right: 27%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #7c7877;
+  padding: 5px 10px;
+  border-radius: 50%;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.clear-btn:hover {
+  color:  #c0392b;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+  margin-top: 15px;
+}

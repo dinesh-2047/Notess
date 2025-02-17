@@ -87,3 +87,47 @@
         });
       });
       
+      
+      // Search bar Function
+      document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("searchInput");
+        const clearSearch = document.getElementById("clearSearch");
+        const notes = document.querySelectorAll(".notes-section .card");
+        const noResultsMessage = document.createElement("p");
+    
+        // "No Results Found" message
+        noResultsMessage.classList.add("no-results");
+        noResultsMessage.textContent = "No notes found";
+        noResultsMessage.style.display = "none";
+        document.querySelector(".notes-section .container").appendChild(noResultsMessage);
+    
+        searchInput.addEventListener("input", function () {
+            const query = searchInput.value.toLowerCase().trim();
+            let hasResults = false;
+    
+            clearSearch.style.display = query ? "block" : "none"; // Show clear button if text exists
+    
+            notes.forEach(card => {
+                const title = card.querySelector(".contentBx h3")?.textContent.toLowerCase() || "";
+                const description = card.querySelector(".contentBx p")?.textContent.toLowerCase() || "";
+    
+                if (title.includes(query) || description.includes(query)) {
+                    card.style.display = "block";
+                    hasResults = true;
+                } else {
+                    card.style.display = "none";
+                }
+            });
+    
+            noResultsMessage.style.display = hasResults ? "none" : "block";
+        });
+    
+        // Clear input when the ✖ button is clicked
+        clearSearch.addEventListener("click", function () {
+            searchInput.value = "";
+            clearSearch.style.display = "none";
+            noResultsMessage.style.display = "none";
+            notes.forEach(card => card.style.display = "block");
+        });
+    });
+    
