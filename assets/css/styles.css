@@ -15,18 +15,56 @@ html{
 body {
   font-family: 'Arial', sans-serif;
   background-color: #defdff;
-background-image: -webkit-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
-background-image: -moz-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
-background-image: -o-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
-background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
+  background-image: -webkit-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
+  background-image: -moz-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
+  background-image: -o-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
+  background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
   color: #000;
   /* overflow-x: hidden; */
-  
-  
- 
 }
 
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
 
+.dark-mode .form-container {
+  background: #1e1e1e;
+}
+
+.dark-mode .form-box {
+  background: #2c2c2c;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+.dark-mode .form-box h2 {
+  color: #fff;
+}
+
+.dark-mode .form-box input {
+  background: #3c3c3c;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+.dark-mode .form-box input::placeholder {
+  color: #aaa;
+}
+
+.dark-mode .form-box button {
+  background: #6A5ACD;
+  color: white;
+}
+
+.dark-mode .form-box button:hover {
+  background: #5a4dbd;
+}
+
+.dark-mode .form-box .toggle-link {
+  color: #6A5ACD;
+}
 
 /* Hero Section */
 .hero {
@@ -35,17 +73,17 @@ background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
   /* justify-content: space-between; */
   padding: 50px 5%;
   background-color: #defdff;
-background-image: -webkit-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
-background-image: -moz-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
-background-image: -o-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
-background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
+  background-image: -webkit-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
+  background-image: -moz-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
+  background-image: -o-linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
+  background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
   flex-wrap: wrap;
   min-height: 75vh;
   width: 100%;
 }
 
 .hero .content {
-  width: 100%;;
+  width: 100%;
   flex: 1;
   /* margin-bottom: 80px; */
 }
@@ -104,7 +142,6 @@ background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
 .premium-notes {
   background: linear-gradient(45deg, purple, green);
 }
-
 
 .free-notes {
   background: linear-gradient(45deg, black, white);
@@ -178,8 +215,6 @@ footer a:hover {
       order: 1;
   }
 }
-
-
 
 .notes-section .container {
   display: flex;
@@ -346,4 +381,112 @@ footer a:hover {
 #scrollToTop:hover {
   transform: scale(1.1);
   filter: brightness(1.1);
+}
+
+/* Login and Signup Forms */
+.form-container {
+  background: #f0f0f0;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-box {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 10px;
+  background: #6A5ACD;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-box button:hover {
+  background: #5a4dbd;
+}
+
+.form-box .toggle-link {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #6A5ACD;
+  text-decoration: none;
+}
+
+.form-box .toggle-link:hover {
+  text-decoration: underline;
+}
+
+/* Input Groups with Icons */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+.input-group input {
+  width: calc(100% - 40px);
+  padding-left: 30px;
+  margin-left: 10px;
+}
+
+/* Dark Mode for Input Groups */
+.dark-mode .input-group i {
+  color: #aaa;
+}
+
+.dark-mode .input-group input {
+  background: #3c3c3c;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+/* Responsive Design for Login and Signup Buttons */
+@media (max-width: 768px) {
+  .nav-link {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-link {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
 }
