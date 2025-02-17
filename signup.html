@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/android-chrome-512x512.png">
+  <title>Sign Up</title>
+</head>
+<body class="signup-page">
+  <div class="form-container">
+    <div class="form-box">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <input type="text" id="signupName" placeholder="Name" required>
+        <input type="email" id="signupEmail" placeholder="Email" required>
+        <input type="password" id="signupPassword" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+      <a href="login.html" class="toggle-link">Already have an account? Login</a>
+    </div>
+  </div>
+  <script src="assets/JavaScript/auth.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleSwitch = document.querySelector(".checkbox");
+      const body = document.body;
+
+      // Check if user has a saved preference
+      if (localStorage.getItem("darkMode") === "enabled") {
+        body.classList.add("dark-mode");
+        toggleSwitch.checked = true;
+      }
+
+      toggleSwitch.addEventListener("change", () => {
+        if (toggleSwitch.checked) {
+          body.classList.add("dark-mode");
+          localStorage.setItem("darkMode", "enabled");
+        } else {
+          body.classList.remove("dark-mode");
+          localStorage.setItem("darkMode", "disabled");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
