@@ -347,3 +347,58 @@ footer a:hover {
   transform: scale(1.1);
   filter: brightness(1.1);
 }
+
+/* searchbar design */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 20px auto;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 5px;
+  background: white;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  font-size: 18px;
+  color: black;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px 50px 10px 40px; /* Space for icon and button */
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.go-btn {
+  position: absolute;
+  right: 5px;
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.go-btn:hover {
+  background: #333;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+  margin-top: 15px;
+  display: none;
+}

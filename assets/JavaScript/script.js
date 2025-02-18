@@ -87,3 +87,44 @@
         });
       });
       
+      
+      // Search bar Function
+      document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("searchInput");
+        const searchBtn = document.getElementById("searchBtn");
+        const notes = document.querySelectorAll(".notes-section .card");
+        const noResultsMessage = document.getElementById("noResultsMessage");
+    
+        function performSearch() {
+            const query = searchInput.value.toLowerCase().trim();
+            let hasResults = false;
+    
+            notes.forEach(card => {
+                const title = card.querySelector(".contentBx h3")?.textContent.toLowerCase() || "";
+                const description = card.querySelector(".contentBx p")?.textContent.toLowerCase() || "";
+    
+                if (title.includes(query) || description.includes(query)) {
+                    card.style.display = "block";
+                    hasResults = true;
+                } else {
+                    card.style.display = "none";
+                }
+            });
+    
+            noResultsMessage.style.display = hasResults ? "none" : "block";
+        }
+    
+        searchBtn.addEventListener("click", performSearch);
+    
+        // Auto-reset when input is cleared
+        searchInput.addEventListener("input", function () {
+            if (searchInput.value.trim() === "") {
+                notes.forEach(card => card.style.display = "block");
+                noResultsMessage.style.display = "none";
+            }
+        });
+    });
+    
+    
+  
+    
