@@ -91,21 +91,13 @@
       // Search bar Function
       document.addEventListener("DOMContentLoaded", function () {
         const searchInput = document.getElementById("searchInput");
-        const clearSearch = document.getElementById("clearSearch");
+        const searchBtn = document.getElementById("searchBtn");
         const notes = document.querySelectorAll(".notes-section .card");
-        const noResultsMessage = document.createElement("p");
+        const noResultsMessage = document.getElementById("noResultsMessage");
     
-        // "No Results Found" message
-        noResultsMessage.classList.add("no-results");
-        noResultsMessage.textContent = "No notes found";
-        noResultsMessage.style.display = "none";
-        document.querySelector(".notes-section .container").appendChild(noResultsMessage);
-    
-        searchInput.addEventListener("input", function () {
+        function performSearch() {
             const query = searchInput.value.toLowerCase().trim();
             let hasResults = false;
-    
-            clearSearch.style.display = query ? "block" : "none"; // Show clear button if text exists
     
             notes.forEach(card => {
                 const title = card.querySelector(".contentBx h3")?.textContent.toLowerCase() || "";
@@ -120,14 +112,19 @@
             });
     
             noResultsMessage.style.display = hasResults ? "none" : "block";
-        });
+        }
     
-        // Clear input when the ✖ button is clicked
-        clearSearch.addEventListener("click", function () {
-            searchInput.value = "";
-            clearSearch.style.display = "none";
-            noResultsMessage.style.display = "none";
-            notes.forEach(card => card.style.display = "block");
+        searchBtn.addEventListener("click", performSearch);
+    
+        // Auto-reset when input is cleared
+        searchInput.addEventListener("input", function () {
+            if (searchInput.value.trim() === "") {
+                notes.forEach(card => card.style.display = "block");
+                noResultsMessage.style.display = "none";
+            }
         });
     });
+    
+    
+  
     

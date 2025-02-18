@@ -351,45 +351,47 @@ footer a:hover {
 /* searchbar design */
 .search-container {
   position: relative;
-  text-align: center;
-  margin-bottom: 20px;
   display: flex;
+  align-items: center;
   justify-content: center;
+  width: 50%;
+  margin: 20px auto;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 5px;
+  background: white;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  font-size: 18px;
+  color: black;
 }
 
 .search-bar {
-  width: 50%;
-  padding: 12px;
-  margin: 20px 0;
+  width: 100%;
+  padding: 10px 50px 10px 40px; /* Space for icon and button */
   font-size: 18px;
-  border: 2px solid #3498db;
-  border-radius: 25px;
+  border: none;
   outline: none;
-  transition: all 0.3s ease-in-out;
-  padding-right: 40px; /* Space for clear button */
+  background: transparent;
 }
 
-.search-bar:focus {
-  border-color: #2ecc71;
-  box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
-}
-
-.clear-btn {
+.go-btn {
   position: absolute;
-  right: 27%;
-  top: 50%;
-  transform: translateY(-50%);
+  right: 5px;
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 16px;
   cursor: pointer;
-  font-size: 18px;
-  color: #7c7877;
-  padding: 5px 10px;
-  border-radius: 50%;
-  display: none;
-  transition: all 0.3s ease;
 }
 
-.clear-btn:hover {
-  color:  #c0392b;
+.go-btn:hover {
+  background: #333;
 }
 
 .no-results {
@@ -398,4 +400,5 @@ footer a:hover {
   font-weight: bold;
   color: red;
   margin-top: 15px;
+  display: none;
 }
