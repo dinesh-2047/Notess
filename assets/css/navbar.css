@@ -35,7 +35,8 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: fixed; */
+  position: relative;
+  z-index: 10;
 }
 
 
@@ -59,6 +60,15 @@ button {
   font-weight: 500;
   color: #000000;
   padding: 8px 16px;
+}
+
+
+.visible{
+  display: inline-block;
+}
+
+.hidden{
+  display: none;
 }
 
 .menu-links a:hover {
