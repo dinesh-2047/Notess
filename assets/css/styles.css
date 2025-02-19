@@ -402,3 +402,76 @@ footer a:hover {
   margin-top: 15px;
   display: none;
 }
+
+
+
+/* FAQ Design */
+.faq-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(0deg, rgba(34,164,195,1) 0%, rgba(228,45,240,1) 100%);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #ddd;
+}
+
+.faq-question {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.faq-item:hover .faq-question {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.02);
+}
+
+.faq-item:active .faq-question {
+  background: rgba(220, 220, 220, 1);
+  transform: scale(0.98);
+}
+
+.faq-answer {
+  padding: 15px;
+  font-size: 16px;
+  color: #444;
+  display: none;
+}
+
+.faq-icon {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.faq-item:active .faq-icon {
+  transform: rotate(90deg);
+}
+
