@@ -123,15 +123,7 @@ body {
   text-align: left;
 }
 .chat-box .model-message::before{
-content:"";
-display:inline-block;
-width:40px;
-height:40px;
-background-image:url('/assets/images/chatbot.png');
-background-size:contain;
-background-repeat: no-repeat;
-background-position: center;
-margin-right: 8px;
+content:url("/assets/icons/favicon-16x16.png")
 }
 strong{
   color:rgb(198, 209, 187)
