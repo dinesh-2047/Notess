@@ -12,8 +12,27 @@ body {
 .main_header {
   text-align: center;
   color: lawngreen;
+ 
 }
 
+.div{
+  overflow: hidden; 
+  border-right: 0.15em solid orange; 
+  white-space: nowrap;
+  margin: 0 auto; 
+  letter-spacing: 0.15em; 
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 20%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  100% { border-color: orange; }
+}
 .header {
   color: white;
   text-align: center;
@@ -74,7 +93,9 @@ body {
 .user-input {
   width: 80%;
   padding: 20px;
-  border-radius: 20px;
+  background-color:rgba(172, 183, 172, 0.2) ;
+  border-radius: 50px;
+  color:White;
 }
 
 
@@ -87,22 +108,31 @@ body {
   text-align: center;
   word-wrap: break-word;
   background-color: rgba(194, 232, 194, 0.2); 
-  border-radius: 10px;
+  border-radius: 40px;
   padding: 10px;
   min-height:20px;
   max-width: 50%; 
   margin-left: auto; 
   
+ 
 
 }
 
 .chat-box .model-message {
+  position: relative;
   text-align: left;
- 
 }
 .chat-box .model-message::before{
-content:url("/assets/icons/favicon-32x32.png");
+content:"";
+display:inline-block;
+width:40px;
+height:40px;
+background-image:url('/assets/images/chatbot.png');
+background-size:contain;
+background-repeat: no-repeat;
+background-position: center;
+margin-right: 8px;
 }
 strong{
-  color:lawngreen
+  color:rgb(198, 209, 187)
 }
