@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Notes</title>
+    <link rel="stylesheet" href="assets/css/notes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+
+            <a href="#"><img src="assets/images/notess-nav-logo.png" alt="" height="40px"
+                    style="left: -10000px;"></a>
+        </div>
+        <h1>Free Notes</h1>
+        <!-- <input type="text" class="search-bar" placeholder="Search notes..."> -->
+    </header>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+        <button onclick="history.back()" class="back-btn"><i class="fas fa-arrow-left"></i> Back</button>
+
+            <h3 style="font-weight: 700; margin-bottom: 15%;">Categories</h3>
+            <ul>
+                <li><a href="#algorithms">Algorithms</a></li>
+                <li><a href="#data-structures">Data Structures</a></li>
+                <li><a href="#networking">Networking</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            <section id="algorithms" class="note-section">
+                <h2>Algorithms</h2>
+                <button class="toggle-btn">Expand</button>
+                <div class="content">
+                    <p>Algorithms are step-by-step procedures to solve problems efficiently.</p>
+                    <pre><code class="code-snippet">
+function binarySearch(arr, target) {
+    let left = 0, right = arr.length - 1;
+    while (left <= right) {
+        let mid = Math.floor((left + right) / 2);
+        if (arr[mid] === target) return mid;
+        arr[mid] < target ? left = mid + 1 : right = mid - 1;
+    }
+    return -1;
+}</code></pre>
+                </div>
+            </section>
+
+            <section id="data-structures" class="note-section">
+                <h2>Data Structures</h2>
+                <button class="toggle-btn">Expand</button>
+                <div class="content">
+                    <p>Data structures organize and store data efficiently.</p>
+                    <img src="data-structures.png" alt="Data Structures" class="note-image">
+                </div>
+            </section>
+
+            <section id="networking" class="note-section">
+                <h2>Networking</h2>
+                <button class="toggle-btn">Expand</button>
+                <div class="content">
+                    <p>Networking involves communication between systems.</p>
+                    <ul>
+                        <li>LAN - Local Area Network</li>
+                        <li>WAN - Wide Area Network</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© Notess. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                let content = button.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                button.textContent = content.style.display === 'block' ? 'Collapse' : 'Expand';
+            });
+        });
+    </script>
+
+</body>
+</html>
