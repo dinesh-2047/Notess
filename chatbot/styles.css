@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.main_header {
+  text-align: center;
+  color: lawngreen;
+}
+
+.header {
+  color: white;
+  text-align: center;
+}
+
+.sub-header {
+  color: rgb(196, 196, 196);
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.div-header {
+  color: white;
+}
+
+.text-header {
+  color: rgb(196, 196, 196);
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+
+}
+
+.text-div {
+  width: 350px;
+  height: 300px;
+  background: rgb(128, 128, 128, 0.2);
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  word-wrap: break-word;
+  border-radius: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width:538px) {
+  .header {
+    font-size: 20px;
+  }
+
+  .sub-header {
+    font-size: 15px;
+  }
+}
+
+.chat-box {
+  color: white;
+  padding:3rem;
+}
+.input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-input {
+  width: 80%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+
+.chat-box .message {
+  margin: 50px 0;
+  font-size: 20px;
+}
+
+.chat-box .user-message {
+  text-align: center;
+  word-wrap: break-word;
+  background-color: rgba(194, 232, 194, 0.2); 
+  border-radius: 10px;
+  padding: 10px;
+  min-height:20px;
+  max-width: 50%; 
+  margin-left: auto; 
+  
+
+}
+
+.chat-box .model-message {
+  text-align: left;
+ 
+}
+.chat-box .model-message::before{
+content:url("/assets/icons/favicon-32x32.png");
+}
+strong{
+  color:lawngreen
+}
