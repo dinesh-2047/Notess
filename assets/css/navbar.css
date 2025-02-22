@@ -13,6 +13,11 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+.logo a{
+  cursor: url('../images/pointer-cursor.png'), pointer;
+}
+
+
 a {
   text-decoration: none;
 }
@@ -22,7 +27,7 @@ button {
   outline: none;
   font-family: inherit;
   font-size: inherit;
-  cursor: pointer;
+  cursor: url('../images/pointer-cursor.png'), pointer;
 }
 
 .navbar {
@@ -38,8 +43,6 @@ button {
   /* position: fixed; */
 }
 
-
-  
 
 .menu {
   display: flex;
@@ -59,10 +62,12 @@ button {
   font-weight: 500;
   color: #000000;
   padding: 8px 16px;
+  cursor: url('../images/pointer-cursor.png'), pointer;
 }
 
 .menu-links a:hover {
   color: white;
+  cursor: url('../images/pointer-cursor.png'), pointer;
 }
 
 .nav-notes {
@@ -73,6 +78,7 @@ button {
   border-radius: 10px;
   border: 2px solid #0aa5ff;
   transition: 0.2s;
+  cursor: url('../images/pointer-cursor.png'), pointer;
 }
 
 .nav-notes:hover {
@@ -84,7 +90,7 @@ button {
   font-size: 32px;
   color: white;
   display: none;
-  cursor: pointer;
+  cursor: url('../images/pointer-cursor.png'), pointer;
 }
 
 /* Media query for small screens */
