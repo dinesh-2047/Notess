@@ -8,8 +8,9 @@
 }
 
 .blog-container h2 {
+    font-family: 'Times New Roman', Times, serif;
     font-size: 2rem;
-    color: #333;
+    color: #8d63e2;
     margin-bottom: 20px;
 }
 
