@@ -11,6 +11,7 @@ button {
     height: 35px; /* 70% of original height */
     z-index: 1000; /* Ensures it stays on top */
     overflow-x: visible;
+    cursor: url('../images/pointer-cursor.png'), pointer;
   }
   
   /* Toggle Background */
@@ -20,8 +21,8 @@ button {
     height: 100%;
     background-color: #183153;
     border-radius: 18px; /* Adjusted for smaller size */
-    cursor: pointer;
     transition: 0.3s;
+    cursor: url('../images/pointer-cursor.png'), pointer;
   }
   
   .checkbox {
@@ -45,6 +46,7 @@ button {
     background-color: #183153;
     box-shadow: inset 10px -3px 0px 0px #d8dbe0;
     transition: 0.4s ease;
+    cursor: url('../images/pointer-cursor.png'), pointer;
   }
   
   /* When Checkbox is Checked */
@@ -92,6 +94,7 @@ button {
   .dark-mode .icon {
     background-color: #69b0e7;
     box-shadow: 0 0 8px rgba(0, 140, 255, 0.9); /* Blue glow on the switch */
+    cursor: url('../images/pointer-cursor.png'), pointer;
   }
   
   .dark-mode .footer{

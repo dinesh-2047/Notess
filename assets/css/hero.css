@@ -50,7 +50,7 @@ h1 span {
 }
 
 button:hover {
-    cursor: pointer !important;
+    cursor: url('../images/pointer-cursor.png'), pointer !important;
 }
 
 .text-animate h1 span {

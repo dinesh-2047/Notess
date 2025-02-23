@@ -40,7 +40,12 @@
                     <a href="./index.html">Home</a>
                     <a href="#">About</a>
                     <a href="#">Contact</a>
+<<<<<<< HEAD
                     <a href="./assets/html/blog.html">Blog</a>
+=======
+                    <a href="#">Blog</a>
+                    
+>>>>>>> 2ffdcbda3fa5b76358a00bbfcf37afa1df16cb42
                 </div>
                 <button class="nav-notes">Notes</button>
             </div>
@@ -93,6 +98,13 @@
       </div> 
     </section>
 
+    <div class="search-container">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search notes..." class="search-bar">
+        <button id="searchBtn" class="go-btn">GO</button>
+    </div>
+    <p id="noResultsMessage" class="no-results">No notes found</p> 
+    
     <section class="notes-section">
         <h2 data-aos="fade-up">Explore Notes </h2>
         <div data-aos="fade-left" class="container">
@@ -129,8 +141,44 @@
         </div>
     </section>
 
-    <button id="scrollToTop">↑</button> 
+    <section class="faq-section">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">What is Notess? <span class="faq-icon">+</span></div>
+            <div class="faq-answer">Notess is a platform that provides engineering students with well-organized notes for different branches and subjects.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Is Notess free to use? <span class="faq-icon">+</span></div>
+            <div class="faq-answer">Yes, Notess is completely free to use and helps you organize your notes effortlessly.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Which branches of engineering are covered?<span class="faq-icon">+</span></div>
+            <div class="faq-answer">We provide notes for multiple engineering branches, including Computer Science, Mechanical, Electrical, Civil, and more.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Can I access my notes on multiple devices? <span class="faq-icon">+</span></div>
+            <div class="faq-answer">Yes, Notess is cloud-based, allowing you to access your notes from any device.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">How often are the notes updated? <span class="faq-icon">+</span></div>
+            <div class="faq-answer">We update notes regularly to keep them relevant to the latest syllabus and trends.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">How do I find notes for my subject? <span class="faq-icon">+</span></div>
+            <div class="faq-answer">You can browse by branch or use the search bar to quickly find specific topics.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Can I download the notes? <span class="faq-icon">+</span></div>
+            <div class="faq-answer">Currently, all notes are accessible online, but we are working on a download feature.</div>
+          </div>
+        </div>
+      </section>
 
+    <button id="scrollToTop">↑</button> 
+    <a href="/chatbot/chatbot.html" class="chatbot">
+        <img src="assets/images/chatbot.png" width="60" height="60">
+    </a>
     <footer class="footer">
         <p>&copy; 2025 Notess. All rights reserved. | <a href="#">Privacy Policy</a></p>
     </footer>
@@ -143,5 +191,4 @@
     <script src="./assets/JavaScript/script.js"></script>
 
 </body>
-
 </html>

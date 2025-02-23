@@ -87,3 +87,64 @@
         });
       });
       
+      
+      // Search bar Function
+      document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("searchInput");
+        const searchBtn = document.getElementById("searchBtn");
+        const notes = document.querySelectorAll(".notes-section .card");
+        const noResultsMessage = document.getElementById("noResultsMessage");
+    
+        function performSearch() {
+            const query = searchInput.value.toLowerCase().trim();
+            let hasResults = false;
+    
+            notes.forEach(card => {
+                const title = card.querySelector(".contentBx h3")?.textContent.toLowerCase() || "";
+                const description = card.querySelector(".contentBx p")?.textContent.toLowerCase() || "";
+    
+                if (title.includes(query) || description.includes(query)) {
+                    card.style.display = "block";
+                    hasResults = true;
+                } else {
+                    card.style.display = "none";
+                }
+            });
+    
+            noResultsMessage.style.display = hasResults ? "none" : "block";
+        }
+    
+        searchBtn.addEventListener("click", performSearch);
+    
+        // Auto-reset when input is cleared
+        searchInput.addEventListener("input", function () {
+            if (searchInput.value.trim() === "") {
+                notes.forEach(card => card.style.display = "block");
+                noResultsMessage.style.display = "none";
+            }
+        });
+    });
+
+// FAQ Section
+
+document.querySelectorAll('.faq-question').forEach(item => {
+  item.addEventListener('click', () => {
+    const answer = item.nextElementSibling;
+    const icon = item.querySelector('.faq-icon');
+
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+      icon.textContent = "+";
+    } else {
+      document.querySelectorAll('.faq-answer').forEach(ans => ans.style.display = "none");
+      document.querySelectorAll('.faq-icon').forEach(ic => ic.textContent = "+");
+
+      answer.style.display = "block";
+      icon.textContent = "−";
+    }
+  });
+});
+    
+    
+  
+    
