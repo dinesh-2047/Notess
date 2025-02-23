@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Standard Favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+        <link rel="icon" type="image/x-icon" href="../icons/favicon.ico">
+        
+        <!-- Apple Touch Icon (For iPhones & iPads) -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
+        
+        <!-- Android Chrome Favicon -->
+        <link rel="icon" type="image/png" sizes="192x192" href="../icons/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="../icons/android-chrome-512x512.png">
+        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notess Blog</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/darkmode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/blog.css">
+</head>
+<body>
+    <!-- Navbar  -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+
+                <a href="../../index.html"><img src="../images/notess-nav-logo.png" alt="" height="40px"
+                        style="left: -10000px;"></a>
+            </div>
+            <div class="menu" id="menu"> <!-- Add id="menu" here -->
+                <div class="menu-links">
+                    <a href="../../index.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="./blog.html">Blog</a>
+                </div>
+                <button class="nav-notes">Notes</button>
+            </div>
+            <div class="menu-btn" id="menu-btn"> <!-- Add id="menu-btn" here -->
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Dark mode  -->
+    <div class="toggle-switch">
+        <label class="slider">
+            <input type="checkbox" class="checkbox">
+            <span class="icon"></span>
+        </label>
+    </div>
+
+    <section class="blog-container">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-grid">
+            <div class="blog-card">
+                <img src="../images/Understanding_AI_Blog.png" alt="Blog 1">
+                <div class="blog-content">
+                    <h3>Understanding Artificial Intelligence</h3>
+                    <p>An introduction to AI, its history, and how it is shaping the future.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="../images/studytips.png" alt="Blog 2">
+                <div class="blog-content">
+                    <h3>Effective Study Techniques</h3>
+                    <p>Explore study techniques that can improve retention and productivity.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="../images/Mastering_DSA.png" alt="Blog 3">
+                <div class="blog-content">
+                    <h3>Mastering Data Structures & Algorithms</h3>
+                    <p>An introduction to key DSA concepts for placement preparation and resources for mastering them.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="../images/Active-Learning.png" alt="Blog 4">
+                <div class="blog-content">
+                    <h3>The Power of Active Learning</h3>
+                    <p>Discover how active learning techniques like group discussions, and self-quizzing can boost comprehension and retention.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="../images/Time_Management_Tips.png" alt="Blog 5">
+                <div class="blog-content">
+                    <h3>Time Management Tips for Students</h3>
+                    <p>Learn effective time management strategies to balance studies, assignments, and personal time efficiently.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="../images/Tech_in_Education.png" alt="Blog 6">
+                <div class="blog-content">
+                    <h3>Role of Technology in Modern Education</h3>
+                    <p>Explore how AI, e-learning platforms, and digital tools are transforming traditional education.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Notess. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000 });
+    </script>
+    <script src="../JavaScript/script.js"></script>
+    
+</body>
+</html>
