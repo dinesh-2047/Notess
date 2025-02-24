@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/darkmode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Profile</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../../index.html">
+                    <img src="../images/notess-nav-logo.png" alt="Logo" height="40px">
+                </a>
+            </div>
+            <div class="menu" id="menu">
+                <div class="menu-links">
+                    <a href="../../index.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="./blog.html">Blog</a>
+                    <a href="./profile.html">Profile</a>
+                </div>
+                <button class="nav-notes">Notes</button>
+            </div>
+            <div class="menu-btn" id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Dark Mode Button -->
+    <button class="dark-mode-btn" onclick="toggleDarkMode()">🌙</button>
+
+    <!-- Profile Section -->
+    <div class="profile-container">
+        <input type="file" id="upload" style="display: none;" accept="image/*">
+        <img src="https://via.placeholder.com/100" id="profilePic" class="profile-pic" onclick="uploadImage()">
+        <h2 id="username">John Doe</h2>
+        <p id="bio">Avid note-taker & thinker 📖</p>
+        <button class="edit-btn" onclick="editProfile()">Edit Profile</button>
+
+        <!-- Edit Email & Password -->
+        <div class="edit-section">
+            <h3>Update Credentials</h3>
+            <input type="email" id="email" placeholder="Update Email">
+            <input type="password" id="password" placeholder="Update Password">
+            <button class="update-btn" onclick="updateCredentials()">Save Changes</button>
+        </div>
+    </div>
+
+    <!-- Notes Section -->
+    <div class="notes-section">
+        <div class="notes-container">
+            <h3>My Notes</h3>
+            <ul id="myNotesList">
+                <li>No notes available</li>
+            </ul>
+        </div>
+        <div class="notes-container">
+            <h3>Saved Notes</h3>
+            <ul id="savedNotesList">
+                <li>No saved notes yet</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="../JavaScript/profile.js"></script>
+    <script src="../JavaScript/script.js"></script>
+</body>
+</html>
