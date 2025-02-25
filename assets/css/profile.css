@@ -16,7 +16,7 @@
 
 /* Navbar stays at the top */
 .navbar {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -104,36 +104,6 @@ body::before {
 
 .edit-btn:hover {
     background: #ddd;
-}
-
-/* Dark Mode Button */
-.dark-mode-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(135deg, #222, #444);
-    color: #ffeb3b;
-    font-size: 24px;
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    z-index: 1000;
-}
-
-.dark-mode-btn:hover {
-    background: linear-gradient(135deg, #333, #555);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-}
-
-.dark-mode-btn:active {
-    transform: scale(0.9);
 }
 
 /* Edit Email & Password Section */
