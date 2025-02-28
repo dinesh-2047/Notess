@@ -55,7 +55,6 @@
     color: #555;
     margin-bottom: 15px;
 }
-
 .read-more {
     display: inline-block;
     padding: 8px 15px;
@@ -70,9 +69,137 @@
     background: #0056b3;
 }
 
+/* Modal Background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 50px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    animation: scaleUp 0.3s ease-out;
+}
+
+/* Close Button */
+.close-btn {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ff5c5c;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    background-color: #e64a4a;
+    transform: rotate(180deg);
+}
+
+/* Modal Title */
+.modal h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Modal Content Text */
+.modal p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Modal Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-    .blog-grid {
-        flex-direction: column;
-        align-items: center;
+    .modal-content {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .modal h2 {
+        font-size: 1.5rem;
+    }
+
+    .modal p {
+        font-size: 0.9rem;
+    }
+
+    .close-btn {
+        top: 10px;
+        right: 10px;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        width: 95%;
+    }
+
+    .modal h2 {
+        font-size: 1.3rem;
+    }
+
+    .modal p {
+        font-size: 0.85rem;
+    }
+
+    .close-btn {
+        top: 5px;
+        right: 5px;
+        width: 35px;
+        height: 35px;
+        font-size: 24px;
     }
 }
