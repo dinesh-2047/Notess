@@ -1,0 +1,197 @@
+/* Footer Styles */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(34,164,195,1) 0%, rgba(228,45,240,1) 100%);
+    padding: 50px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    gap: 30px;
+}
+
+/* Footer Sections */
+.footer-left,
+.footer-middle,
+.footer-right {
+    flex: 1;
+    min-width: 280px; /* Prevents elements from shrinking too much */
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo and Image */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.footer-right * {
+    pointer-events: auto !important;
+}
+
+.footer-left .image {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background: transparent;
+}
+
+.footer-left .image img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 50%;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 15px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    overflow: hidden;
+    margin:2 auto
+}
+
+.fa-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.fa-icon:hover {
+    transform: scale(1.1);
+    color: #ffcc00;
+}
+
+/* Footer Section Headings */
+.footer-middle h3,
+.footer-right h3 {
+    color: #FFEA00;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Links */
+.footer-middle ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-middle ul li {
+    margin: 5px 0;
+}
+
+.footer-middle ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-middle ul li a:hover {
+    color: #FFFFFF;
+}
+
+/* Contact Form */
+.footer-right form {
+    display: flex;
+    position: relative;
+    z-index: 10;
+    flex-direction: column;
+    text-align: left;
+    overflow: hidden;
+}
+
+.footer-right form input,
+.footer-right form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 14px;
+    pointer-events: auto !important;
+}
+.footer-right form textarea#message {
+    min-height: 100px; 
+    resize: vertical; 
+}
+
+.footer-right form input::placeholder,
+.footer-right form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7); 
+}
+
+.footer-right form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #5961F9, #E42DF0);
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    transition: background 0.5s ease-in-out, transform 0.3s ease-in-out;
+    background-size: 200% auto; /* Expands gradient animation */
+}
+
+.footer-right form button:hover {
+    background: linear-gradient(90deg, #ffcc00, #E42DF0);
+    background-position: right center; /* Moves gradient smoothly */
+    transform: scale(1.05); /* Slight enlargement effect */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-left .image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .fa-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
