@@ -1,190 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Standard Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/icons/favicon-16x16.png"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
 
-<head>
-        <!-- Standard Favicon -->
-<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
-<link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <!-- Apple Touch Icon (For iPhones & iPads) -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
 
-<!-- Apple Touch Icon (For iPhones & iPads) -->
-<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <!-- Android Chrome Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/icons/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/icons/android-chrome-512x512.png"
+    />
 
-<!-- Android Chrome Favicon -->
-<link rel="icon" type="image/png" sizes="192x192" href="assets/icons/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="assets/icons/android-chrome-512x512.png">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notess</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/darkmode.css">
-    <link rel="stylesheet" href="assets/css/hero.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-</head>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/footer.css"
+    />
+    <link rel="stylesheet" href="assets/css/darkmode.css"/>
+    <link rel="stylesheet" href="assets/css/hero.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
 
-<body>
-
+  <body>
     <!-- Navbar  -->
     <header>
-        <nav class="navbar">
-            <div class="logo">
-
-                <a href="./index.html"><img src="assets/images/notess-nav-logo.png" alt="" height="40px"
-                        style="left: -10000px;"></a>
-            </div>
-            <div class="menu" id="menu"> <!-- Add id="menu" here -->
-                <div class="menu-links">
-                    <a href="./index.html">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                    <a href="./assets/html/blog.html">Blog</a>
-                    <a href="./assets/html/profile.html">Profile</a>
-                </div>
-                <button class="nav-notes">Notes</button>
-            </div>
-            <div class="menu-btn" id="menu-btn"> <!-- Add id="menu-btn" here -->
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="./index.html"
+            ><img
+              src="assets/images/notess-nav-logo.png"
+              alt=""
+              height="40px"
+              style="left: -10000px"
+          /></a>
+        </div>
+        <div class="menu" id="menu">
+          <!-- Add id="menu" here -->
+          <div class="menu-links">
+            <a href="./index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="./assets/html/blog.html">Blog</a>
+            <a href="./assets/html/profile.html">Profile</a>
+          </div>
+          <button class="nav-notes">Notes</button>
+        </div>
+        <div class="menu-btn" id="menu-btn">
+          <!-- Add id="menu-btn" here -->
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
     </header>
-
 
     <!-- Dark mode  -->
     <div class="toggle-switch">
-        <label class="slider">
-            <input type="checkbox" class="checkbox">
-            <span class="icon"></span>
-        </label>
+      <label class="slider">
+        <input type="checkbox" class="checkbox" />
+        <span class="icon"></span>
+      </label>
     </div>
-
-
 
     <!-- Hero section  -->
     <section class="hero">
       <div class="hero-container">
-            <div data-aos="fade-up" class="content">
-                <div class="text">
-                    <div class="text-animate">
-                        <h1 data-aos="fade-right">Your Ultimate Source For All  <span>Educational Requirements</span>
-                            Online</h1>
-                    </div>
-                    <p data-aos="fade-left">Welcome to Notess - Your hub for free study materials and premium resources. Elevate
-                        your learning journey with us.</p>
-                </div>
+        <div data-aos="fade-up" class="content">
+          <div class="text">
+            <div class="text-animate">
+              <h1 data-aos="fade-right">
+                Your Ultimate Source For All
+                <span>Educational Requirements</span> Online
+              </h1>
             </div>
-            <div class="img-btn">
-                <div data-aos="fade-left" class="gradient-buttons">
-                    <button class="gradient-button premium-notes">
-                        <div class="inner"></div>
-                        <span>Premium Notes</span>
-                    </button>
-        
-                    <button class="gradient-button free-notes">Free Notes</button>
-                </div>
-                <div class="image">
-                    <img src="assets/images/notess-logo.png" alt="Hero Image">
-                    <span class="circle-spin"></span>
-                    <span class="circle-spin-2"></span>
-                    <span class="circle-spin-3"></span>
-                </div>
-            </div>
-      </div> 
+            <p data-aos="fade-left">
+              Welcome to Notess - Your hub for free study materials and premium
+              resources. Elevate your learning journey with us.
+            </p>
+          </div>
+        </div>
+        <div class="img-btn">
+          <div data-aos="fade-left" class="gradient-buttons">
+            <button class="gradient-button premium-notes">
+              <div class="inner"></div>
+              <span>Premium Notes</span>
+            </button>
+
+            <button class="gradient-button free-notes">Free Notes</button>
+          </div>
+          <div class="image">
+            <img src="assets/images/notess-logo.png" alt="Hero Image" />
+            <span class="circle-spin"></span>
+            <span class="circle-spin-2"></span>
+            <span class="circle-spin-3"></span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <div class="search-container">
-        <span class="search-icon">🔍</span>
-        <input type="text" id="searchInput" placeholder="Search notes..." class="search-bar">
-        <button id="searchBtn" class="go-btn">GO</button>
+      <span class="search-icon">🔍</span>
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search notes..."
+        class="search-bar"
+      />
+      <button id="searchBtn" class="go-btn">GO</button>
     </div>
-    <p id="noResultsMessage" class="no-results">No notes found</p> 
-    
+    <p id="noResultsMessage" class="no-results">No notes found</p>
+
     <section class="notes-section">
-        <h2 data-aos="fade-up">Explore Notes </h2>
-        <div data-aos="fade-left" class="container">
-            <!-- Card 1 -->
-            <div class="card">
-                <div class="imgBx">
-                    <img src="assets/images/notess-logo.png" alt="Computer Science">
-                </div>
-                <div class="contentBx">
-                    <h3>Computer Science</h3>
-                    <p>Comprehensive notes on algorithms, programming, and software engineering.</p>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="card">
-                <div class="imgBx">
-                    <img src="assets/images/notess-logo.png" alt="Mechanical Engineering">
-                </div>
-                <div class="contentBx">
-                    <h3>Mechanical Engineering</h3>
-                    <p>Study thermodynamics, fluid mechanics, and manufacturing processes.</p>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="card">
-                <div class="imgBx">
-                    <img src="assets/images/notess-logo.png" alt="Electronics and Communication">
-                </div>
-                <div class="contentBx">
-                    <h3>Electronics & Communication</h3>
-                    <p>Detailed notes on circuits, communication systems, and signal processing.</p>
-                </div>
-            </div>
+      <h2 data-aos="fade-up">Explore Notes</h2>
+      <div data-aos="fade-left" class="container">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="imgBx">
+            <img src="assets/images/notess-logo.png" alt="Computer Science" />
+          </div>
+          <div class="contentBx">
+            <h3>Computer Science</h3>
+            <p>
+              Comprehensive notes on algorithms, programming, and software
+              engineering.
+            </p>
+          </div>
         </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="imgBx">
+            <img
+              src="assets/images/notess-logo.png"
+              alt="Mechanical Engineering"
+            />
+          </div>
+          <div class="contentBx">
+            <h3>Mechanical Engineering</h3>
+            <p>
+              Study thermodynamics, fluid mechanics, and manufacturing
+              processes.
+            </p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="imgBx">
+            <img
+              src="assets/images/notess-logo.png"
+              alt="Electronics and Communication"
+            />
+          </div>
+          <div class="contentBx">
+            <h3>Electronics & Communication</h3>
+            <p>
+              Detailed notes on circuits, communication systems, and signal
+              processing.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="faq-section">
-        <h2 class="faq-title">Frequently Asked Questions</h2>
-        <div class="faq-container">
-          <div class="faq-item">
-            <div class="faq-question">What is Notess? <span class="faq-icon">+</span></div>
-            <div class="faq-answer">Notess is a platform that provides engineering students with well-organized notes for different branches and subjects.</div>
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            What is Notess? <span class="faq-icon">+</span>
           </div>
-          <div class="faq-item">
-            <div class="faq-question">Is Notess free to use? <span class="faq-icon">+</span></div>
-            <div class="faq-answer">Yes, Notess is completely free to use and helps you organize your notes effortlessly.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">Which branches of engineering are covered?<span class="faq-icon">+</span></div>
-            <div class="faq-answer">We provide notes for multiple engineering branches, including Computer Science, Mechanical, Electrical, Civil, and more.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">Can I access my notes on multiple devices? <span class="faq-icon">+</span></div>
-            <div class="faq-answer">Yes, Notess is cloud-based, allowing you to access your notes from any device.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">How often are the notes updated? <span class="faq-icon">+</span></div>
-            <div class="faq-answer">We update notes regularly to keep them relevant to the latest syllabus and trends.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">How do I find notes for my subject? <span class="faq-icon">+</span></div>
-            <div class="faq-answer">You can browse by branch or use the search bar to quickly find specific topics.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">Can I download the notes? <span class="faq-icon">+</span></div>
-            <div class="faq-answer">Currently, all notes are accessible online, but we are working on a download feature.</div>
+          <div class="faq-answer">
+            Notess is a platform that provides engineering students with
+            well-organized notes for different branches and subjects.
           </div>
         </div>
-      </section>
+        <div class="faq-item">
+          <div class="faq-question">
+            Is Notess free to use? <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Yes, Notess is completely free to use and helps you organize your
+            notes effortlessly.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            Which branches of engineering are covered?<span class="faq-icon"
+              >+</span
+            >
+          </div>
+          <div class="faq-answer">
+            We provide notes for multiple engineering branches, including
+            Computer Science, Mechanical, Electrical, Civil, and more.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            Can I access my notes on multiple devices?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Yes, Notess is cloud-based, allowing you to access your notes from
+            any device.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            How often are the notes updated? <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            We update notes regularly to keep them relevant to the latest
+            syllabus and trends.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            How do I find notes for my subject? <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            You can browse by branch or use the search bar to quickly find
+            specific topics.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            Can I download the notes? <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Currently, all notes are accessible online, but we are working on a
+            download feature.
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <button id="scrollToTop">↑</button> 
+    <button id="scrollToTop">↑</button>
     <a href="/chatbot/chatbot.html" class="chatbot">
-        <img src="assets/images/chatbot.png" width="60" height="60">
+      <img src="assets/images/chatbot.png" width="60" height="60" />
     </a>
     <footer class="footer">
-        <p>&copy; 2025 Notess. All rights reserved. | <a href="#">Privacy Policy</a></p>
-    </footer>
+      <div class="footer-container">
+        <!-- Logo & About -->
+        <div class="footer-left">
+            <div class="image">
+                <img src="assets/images/notess-nav-logo.png" alt="Hero Image" />
+            </div>
+            <p>
+                Empowering learners with knowledge. Simplify your studies with organized notes and seamless learning.
+            </p>
+            <p class="copyright">© Notess. All rights reserved.</p>
+          <div class="social-icons">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="fa-icon text-gray-400 hover:text-teal-400 transition transform hover:scale-110"
+              aria-label="GitHub"
+            >
+              <svg
+                class="w-3 h-3"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+              <path
+              d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.043-1.416-4.043-1.416-.546-1.385-1.333-1.753-1.333-1.753-1.09-.745.082-.729.082-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.774.418-1.304.762-1.605-2.665-.305-5.467-1.332-5.467-5.93 0-1.31.467-2.382 1.235-3.222-.123-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 3.003-.404c1.018.005 2.044.137 3.003.404 2.292-1.553 3.3-1.23 3.3-1.23.653 1.653.241 2.874.118 3.176.77.84 1.233 1.912 1.233 3.222 0 4.61-2.805 5.623-5.478 5.92.43.37.823 1.096.823 2.21v3.287c0 .32.19.694.8.577C20.565 21.797 24 17.302 24 12c0-6.627-5.373-12-12-12z"
+            />
+              </svg>
+            </a>
 
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="fa-icon text-gray-400 hover:text-teal-400 transition transform hover:scale-110"
+              aria-label="Discord"
+            >
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M20.317 4.369A19.771 19.771 0 0 0 15.545 3c-.285.52-.524 1.06-.717 1.617a18.875 18.875 0 0 0-5.656 0A16.896 16.896 0 0 0 8.455 3a19.771 19.771 0 0 0-4.772 1.369C2.015 9.11 1.681 13.742 2.009 18.332A19.884 19.884 0 0 0 7.8 21c.6-.805 1.131-1.66 1.595-2.562-.87-.31-1.69-.71-2.453-1.204.205-.146.4-.299.59-.458a15.15 15.15 0 0 0 6.937 0c.191.159.386.312.59.458a11.51 11.51 0 0 1-2.453 1.204c.464.902.995 1.757 1.595 2.562a19.884 19.884 0 0 0 5.791-2.668c.328-4.59-.006-9.222-1.91-13.963zM9 15c-1.104 0-2-.888-2-2s.896-2 2-2 2 .888 2 2-.896 2-2 2zm6 0c-1.104 0-2-.888-2-2s.896-2 2-2 2 .888 2 2-.896 2-2 2z"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="fa-icon text-gray-400 hover:text-teal-400 transition transform hover:scale-110"
+              aria-label="X (Twitter)"
+            >
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M21.63 5.93a8.75 8.75 0 0 1-2.49.68 4.34 4.34 0 0 0 1.92-2.38 8.74 8.74 0 0 1-2.75 1.04A4.37 4.37 0 0 0 12 8.48a12.42 12.42 0 0 1-9-4.56 4.34 4.34 0 0 0 1.34 5.82 4.32 4.32 0 0 1-1.98-.55v.06a4.36 4.36 0 0 0 3.5 4.28 4.4 4.4 0 0 1-1.96.07 4.37 4.37 0 0 0 4.08 3.03 8.78 8.78 0 0 1-5.45 1.88 8.94 8.94 0 0 1-1.04-.06 12.36 12.36 0 0 0 6.69 1.96c8.03 0 12.43-6.65 12.43-12.43v-.57a8.86 8.86 0 0 0 2.2-2.27z"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="fa-icon text-gray-400 hover:text-teal-400 transition transform hover:scale-110"
+              aria-label="LinkedIn"
+            >
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M4.98 3.5a2.48 2.48 0 1 1 0 4.96 2.48 2.48 0 0 1 0-4.96zM3.5 8.75h3V20h-3V8.75zm5.25 0h2.9v1.54h.04a3.18 3.18 0 0 1 2.86-1.57c3.06 0 3.63 2.01 3.63 4.62V20h-3V14.2c0-1.38-.02-3.16-1.93-3.16-1.94 0-2.23 1.51-2.23 3.05V20h-3V8.75z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Archives -->
+        <div class="footer-middle">
+            <h3>Notes Categories</h3>
+            <ul>
+                <li><a href="#">Programming</a></li>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Science</a></li>
+                <li><a href="#">Engineering</a></li>
+                <li><a href="#">Exam Prep</a></li>
+                <li><a href="#">Others</a></li>
+            </ul>            
+        </div>
+
+        <!-- Contact Us -->
+        <div class="footer-right">
+          <h3>Contact Us</h3>
+          <form>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" value="Notes King" disabled />
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" value="example@gmail.com" disabled />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              placeholder="Your message here..."
+              disabled
+            ></textarea>
+
+            <button type="submit" disabled>Send Message</button>
+          </form>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        AOS.init({ duration: 1000 });
+      AOS.init({ duration: 1000 });
     </script>
     <script src="./assets/JavaScript/script.js"></script>
-
-</body>
+  </body>
 </html>
