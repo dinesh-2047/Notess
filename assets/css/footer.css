@@ -43,6 +43,7 @@
 }
 
 .footer-left .image {
+    align-items: center;
     width: 200px;
     height: 200px;
     overflow: hidden;
@@ -50,6 +51,7 @@
 }
 
 .footer-left .image img {
+    margin-top: 50px;
     width: 100%;
     height: auto;
     max-width: 200px;
