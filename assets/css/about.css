@@ -1,0 +1,101 @@
+
+body {
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #defdff;
+    background-image: linear-gradient(0deg, #defdff 0%, #f9deff 50%, #90e4d7 100%);
+    color: #000;
+    cursor: url('../images/custom-cursor.png'), auto;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+#about-us-img{
+    height: 30rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.about-us{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 0rem 4rem;
+    margin-top: 4rem;
+}
+.about-us-content,.key-feature-content{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.key-feature{
+    padding: 0 10rem;
+}
+.key-feature h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.key-feature ul{
+    list-style: none;
+    padding: 0;
+}
+.about-footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 3rem;
+    background-color: #e2a5f0;
+}
+.about-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 3rem;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+.dark-mode .about-footer{
+    background-color: #3a3358;
+    color: #fff;
+}
+@media (max-width: 768px) {
+    .about-us{
+        grid-template-columns: 1fr;
+        padding: 0rem 2rem;
+    }
+    .about-us-content,.key-feature-content{
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+    .key-feature{
+        padding: 0 2rem;
+    }
+    .about-footer{
+        padding: 1rem;
+    }
+    
+}
