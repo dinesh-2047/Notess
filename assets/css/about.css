@@ -33,10 +33,10 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 .about-us{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
     padding: 0rem 4rem;
     margin-top: 4rem;
 }
@@ -82,20 +82,19 @@ body {
     background-color: #3a3358;
     color: #fff;
 }
-@media (max-width: 768px) {
+@media  screen and (max-width:600px) {
+    #about-us-img{
+        height: 18rem;
+    }
     .about-us{
-        grid-template-columns: 1fr;
-        padding: 0rem 2rem;
-    }
-    .about-us-content,.key-feature-content{
-        margin-top: 2rem;
-        padding: 0 1rem;
-    }
-    .key-feature{
-        padding: 0 2rem;
-    }
-    .about-footer{
+        flex-direction: column;
+        width: 100%;
+        max-width: 600px;
         padding: 1rem;
+        margin-top: 1rem;
     }
-    
+    #main-section{
+        width: 100%;
+        max-width: 400px;
+    }
 }
