@@ -149,3 +149,13 @@ body {
         font-weight: 400;
     }
 }
+#submit-btn{
+    text-align: center;
+    background-color: #90e4d7;
+    width: 40%;
+    padding: 4px 3px;
+    border-radius: 0.5rem;
+}
+#submit-btn:hover{
+    background-color: #f9deff;
+}
