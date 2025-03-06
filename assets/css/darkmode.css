@@ -104,5 +104,41 @@ button {
     box-shadow: 0 0 20px rgba(100, 149, 237, 0.6); /* Blue glowing effect */
   }
   
-  
+  /* dark mode for deals of the day section */
+
+.dark-mode #deals-of-the-day {
+  background: #222; /* Dark background */
+  color: #fff; /* Light text */
+  border: 1px solid #444;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .deal-item {
+  background: #333;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.dark-mode #close-deals {
+  background: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.dark-mode #close-deals:hover {
+  background: #ff3333;
+}
+
+/* Darken overlay */
+.dark-mode #overlay {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+}
+
  

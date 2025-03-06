@@ -192,12 +192,13 @@ footer a:hover {
 
 .card {
   width: 250px; /* Default size for desktop */
-  height: 320px;
+  height: 340px;
   background: white;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
 }
 
 .card:hover {
@@ -261,7 +262,7 @@ footer a:hover {
   }
   .card {
       width: 220px; /* Slightly smaller cards for tablets */
-      height: 300px;
+      height: 340px;
   }
   .card .imgBx img {
       width: 70px; /* Slightly smaller images for tablets */
@@ -275,7 +276,7 @@ footer a:hover {
   }
   .card {
       width: 180px; /* Smaller cards for mobile */
-      height: 260px;
+      height: 280px;
   }
   .card .imgBx {
       height: 120px; /* Adjust image box height */
@@ -300,6 +301,7 @@ footer a:hover {
   .card {
       width: 90%; /* Take up most of the screen width */
       max-width: 300px; /* Prevent cards from being too large */
+      height: fit-content;
       margin-bottom: 20px;
   }
 }
