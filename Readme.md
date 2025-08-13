@@ -103,7 +103,7 @@ To maintain a well-organized repository, please follow these guidelines:
   - If any folder does not exist, create it before adding files.
 - **Follow proper naming conventions.**
 - **Ensure your code is properly formatted and documented.**
-- **Test your changes before submitting a PR.**
+- **Test your changes before submitting a Pull Request.**
 
 ---
 
