@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { CheckCircle2, Shield, Sparkles } from 'lucide-react'
 import { useResources } from '@/hooks/useResources'
-import ResourceCard from '@/components/resources/ResourceCard'
+import ResourceCard from '@/Components/resources/ResourceCard'
 
 const features = [
   {

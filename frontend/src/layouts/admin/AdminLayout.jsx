@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { NavLink, Outlet, useNavigate, Link } from 'react-router-dom'
 import { Bell, Menu, ArrowLeft, Home, Moon, Sun } from 'lucide-react'
-import AdminSidebar, { adminLinks } from '@/components/admin/AdminSidebar'
+import AdminSidebar, { adminLinks } from '@/Components/admin/AdminSidebar'
 import { useTheme } from '@/context/ThemeContext'
 
 const AdminLayout = () => {
